@@ -1,0 +1,65 @@
+// -------------------------------
+//        HORIZONTAL LINES
+// -------------------------------
+
+.line-h {
+    position: absolute;
+    border-top: 1px #d0e7fd solid;
+    width: 100%;
+    z-index: -999;
+}
+.h0 {
+    top: 0%;
+    margin-top: 10px;
+}
+.h1 {top: 25%;}
+.h2 {top: 50%;}
+.h3 {top: 75%;}
+.h4 {top: 100%;}
+.h5 {top: 125%;}
+.h6 {top: 150%;}
+.h7 {top: 175%;}
+.h8 {top: 200%;}
+.h9 {top: 225%;}
+
+// -------------------------------
+//        VERTICLE LINES
+// -------------------------------
+.line-v {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    border-right: 1px solid #d0e7fd;
+    z-index: -999;
+}
+
+.v0 {left: 1%;}
+.v1 {left: 15%;}
+.v2 {left: 29%;}
+.v3 {left: 43%;}
+.v4 {left: 57%;}
+.v5 {left: 71%;}
+.v6 {left: 85%;}
+.v7 {left: 99%;}
+
+@media only screen and (max-width: 700px) {
+    .v0 {left: 0%}
+    .v1 {left: 20%}
+    .v2 {left: 40%}
+    .v3 {left: 60%}
+    .v4 {left: 80%}
+    .v5 {left: 100%}
+    .v6 {display: none;}
+    .v7 {display: none;}
+}
+
+@media only screen and (max-width: 400px) { 
+    .v0 {left: 0%}
+    .v1 {left: 33.5%}
+    .v2 {left: 66.5%}
+    .v3 {left: 100%}
+    .v4 {display: none;}
+    .v5 {display: none;}
+    .v6 {display: none;}
+    .v7 {display: none;}
+}

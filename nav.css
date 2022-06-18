@@ -1,0 +1,48 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px 25px;
+  padding: 10px 0;
+}
+
+.navbar a {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.hamburger,
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    margin: 25px;
+    padding: 10px 0;
+  }
+  .navbar,
+  .switcher {
+    display: none;
+  }
+  .mobile-menu div {
+    width: 22px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #313131;
+  }
+  .mobile-menu div:nth-child(2) {
+    width: 18px;
+  }
+  .mobile-menu div:nth-child(3) {
+    width: 22px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

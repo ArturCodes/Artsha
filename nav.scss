@@ -1,0 +1,50 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 25px;
+    padding: 10px 0;
+}
+
+.navbar {
+    a {
+        margin: 0 5px;
+        padding: 0 5px;
+    }
+}
+
+.hamburger,
+.mobile-nav {
+    display: none;
+}
+
+// -------------------------------
+//     MOBILE @ MEDIA SCREEN
+// -------------------------------
+
+@media only screen and (max-width: 750px) {
+    nav {
+        margin: 25px;
+        padding: 10px 0;
+    }
+
+    .navbar,
+    .switcher {
+        display: none;
+    }
+
+    .mobile-menu {
+        div {
+            width: 22px;
+            height: 2px;
+            margin: 4px 0;
+            background-color: rgb(49, 49, 49);
+        }
+        div:nth-child(2) {
+            width: 18px;
+        }
+        div:nth-child(3) {
+            width: 22px;
+        }
+    }
+}
