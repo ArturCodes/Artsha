@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artsha - Web Design + Development</title>
+    <!-- js files -->
+    <script src="themeChanger.js"></script>
+    <script src="mobileNav.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="lines.css" />
@@ -36,8 +39,9 @@
     </div>
 
     <header>
-      <!-- NAVIGATION BAR -->
+      <!-- ------NAVIGATION------ -->
       <nav>
+        <!-- ------DESKTOP NAV------- -->
         <div class="logo">
           <a href="/">
             <img src="" alt="Artsha Web Design Logo" />
@@ -60,24 +64,36 @@
           <div class="language-switch">Eng / Pyc</div>
         </div>
 
-        <!-- MOBILE NAVIGATION -->
-        <div class="mobile-menu" onclick='console.log("open menu")'>
+        <!-- shown when width less than 750px -->
+        <div class="mobile-menu-outer" onclick='console.log("open menu")'>
           <div></div>
           <div></div>
           <div></div>
         </div>
 
-        <div class="mobile-nav">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/portfolio">Potfolio</a>
-          <a href="/contact">Contact</a>
+        <!-- ------MOBILE NAV ------ -->
+
+        <div class="mobile-wrapper closed">
+          <div class="mobile-nav">
+            <div class="mobile-menu-inner" onclick='console.log("close menu")'>
+              <div></div>
+              <div></div>
+            </div>
+
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/portfolio">Potfolio</a>
+            <a href="/contact">Contact</a>
+          </div>
         </div>
+
       </nav>
-
     </header>
 
+    <main>
+      <section class="landing"></section>
+    </main>
 
   </body>
 </html>
