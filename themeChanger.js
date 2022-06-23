@@ -16,9 +16,9 @@ themeSwitchButton.onclick = () => {
     } else if (theme = 'green') {
         body.classList.replace('green', 'dark');
         localStorage.setItem('theme', 'dark');
-    } else (theme = 'dark') {
+    } else if (theme = 'dark') {
         body.classList.replace('dark', 'light');
         localStorage.setItem('theme', 'light');
-    }
+    };
 
 }

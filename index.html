@@ -58,14 +58,12 @@
         </div>
 
         <div class="switcher">
-          <div class="themeSwitchButton" onclick='console.log("theme change")'>
-            <button><img src="" alt="theme-changer" /></button>
-          </div>
+          <button><img src="" alt="theme-changer" /></button>
           <div class="language-switch">Eng / Pyc</div>
         </div>
 
         <!-- shown when width less than 750px -->
-        <div class="mobile-menu-outer" onclick='console.log("open menu")'>
+        <div class="mobile-menu-open-button" onclick="openNav()">
           <div></div>
           <div></div>
           <div></div>
@@ -73,31 +71,28 @@
 
         <!-- ------MOBILE NAV ------ -->
 
-        <div class="mobile-wrapper closed">
+        <div id="mobile-nav" class="close">
 
-          <div class="mobile-nav">
+          <div class="mobile-x-button" onclick="closeNav()">
+            <div></div>
+            <div></div>
+          </div>
 
-            <div class="mobile-menu-inner open" onclick='closeMobileMenu()'>
-              <div></div>
-              <div></div>
-            </div>
-
+          <div class="mobile-links">
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/services">Services</a>
             <a href="/portfolio">Potfolio</a>
             <a href="/contact">Contact</a>
-            
           </div>
 
         </div>
-
+        
       </nav>
     </header>
 
     <main>
       <section class="landing"></section>
     </main>
-
   </body>
 </html>

@@ -1,5 +1,4 @@
 //  DESKTOP NAV
-
 @media only screen and (min-width: 751px) {
     nav {
         display: flex;
@@ -16,8 +15,8 @@
         }
     }
 
-    .mobile-menu-outer,
-    .mobile-wrapper {
+    #mobile-menu-outer,
+    #mobile-nav {
         display: none;
     }
 }
@@ -27,6 +26,7 @@
 // -------------------------------
 
 @media only screen and (max-width: 750px) {
+    // Outer Mobile Menu
     nav {
         margin: 25px;
         padding: 10px 0;
@@ -37,37 +37,32 @@
         display: none;
     }
 
-    .mobile-menu-outer {
-
+    .mobile-menu-open-button {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 30px;
+        right: 30px;
 
         div {
-            width: 20px;
-            height: 2px;
+            width: 24px;
+            height: 3px;
             margin: 4px 0;
             background-color: rgb(0, 0, 0);
         }
+
         div:nth-child(2) {
-            width: 18px;
-            margin-left: 2px;
+            width: 20px;
+            margin-left: 4px;
         }
         div:nth-child(3) {
-            width: 20px;
+            width: 24px;
         }
     }
 
+    //  -----------------------------------
+    //  -----------------------------------
+
     // Inner Mobile Menu
-    .mobile-wrapper {
-        display: block;
-        position: absolute;
-        z-index: 900;
-        height: 100vh;
-        width: 100vw;
-        background-color: rgba(37, 37, 37, 0.781);
-    }
-    .mobile-nav {
+    #mobile-nav {
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -75,43 +70,45 @@
         position: fixed;
         top: 0;
         right: 0;
-        padding-top: 50px;
 
         background-color: rgb(116, 116, 116);
         height: 100vh;
-        min-width: 150px;
-        width: 75%;
-        max-width: 200px;
+        min-width: 200px;
+        width: 80%;
+        max-width: 300px;
         z-index: 999;
     }
-    .mobile-menu-inner {
+    //mobile inner menu X button
+    #mobile-menu-inner {
+        padding: 15px;
+
         div {
-            top: 0;
-            height: 2px;
+            height: 3px;
             background-color: rgb(0, 0, 0);
         }
         div:nth-child(1) {
             position: absolute;
             transform: rotate(-45deg);
-            width: 20px;
-            top: 20px;
-            right: 10px;
+            width: 30px;
+            top: 30px;
+            right: 20px;
         }
         div:nth-child(2) {
             position: absolute;
-            top: 20px;
-            right: 10px;
+            top: 30px;
+            right: 20px;
             transform: rotate(45deg);
-            width: 20px;
+            width: 30px;
         }
     }
-}
-
-
- 
-.close {
-    display: none;
-}
-.open {
-    display: block;
+    .mobile-lnks {
+        display: flex;
+        flex-direction: column;
+    }
+    .close {
+        display: none !important;
+    }
+    .openNav {
+        display: flex;
+    }
 }
