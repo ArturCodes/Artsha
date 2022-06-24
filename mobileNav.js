@@ -4,5 +4,5 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById('mobile-nav').classList.replace('openNav', 'closeNav')
+    document.getElementById('mobile-nav').classList.replace('openNav', 'closeNav');
 }
