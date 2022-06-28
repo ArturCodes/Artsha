@@ -1,3 +1,15 @@
+.horizontal-lines-wrapper,
+.verticle-lines-wrapper,
+.line-v,
+.line-h {
+  -ms-user-select: none;
+      user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
 .line-h {
   position: absolute;
   border-top: 1px #d0e7fd solid;
@@ -7,7 +19,7 @@
 
 .h0 {
   top: 0%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .h1 {
@@ -55,7 +67,7 @@
 }
 
 .v0 {
-  left: 1%;
+  left: 1.5%;
 }
 
 .v1 {
@@ -83,7 +95,7 @@
 }
 
 .v7 {
-  left: 99%;
+  left: 98.5%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -113,21 +125,21 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .v0 {
     left: 0%;
   }
   .v1 {
-    left: 33.5%;
+    left: 25%;
   }
   .v2 {
-    left: 66.5%;
+    left: 50%;
   }
   .v3 {
-    left: 100%;
+    left: 75%;
   }
   .v4 {
-    display: none;
+    left: 100%;
   }
   .v5 {
     display: none;

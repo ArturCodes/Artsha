@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="lines.css" />
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="landing.css" />
   </head>
 
   <body class="light">
@@ -44,7 +45,7 @@
         <!-- ------DESKTOP NAV------- -->
         <div class="logo">
           <a href="/">
-            <img src="" alt="Artsha Web Design Logo" />
+            <img src="" alt="Artsha" />
             <div>Web Design</div>
           </a>
         </div>
@@ -61,34 +62,50 @@
           <button><img src="" alt="theme-changer" /></button>
           <div class="language-switch">Eng / Pyc</div>
         </div>
-
+        
         <!-- appears when width less than 750px -->
         <div id="mobile-menu-open-button" onclick="openNav()">
           <div></div>
           <div></div>
           <div></div>
         </div>
-
+      
+        
         <!-- ------MOBILE NAV ------ -->
-
+        <div id="opacity-bg" class="closeNav" onclick="closeNav()"></div>
         <div id="mobile-nav" class="closeNav">
-          <div class="mobile-x-button" onclick="closeNav()">
-            <div></div>
-            <div></div>
-          </div>
+          <div>
+            <!------------------------------------->
+            <div class="mobile-top">
+              <img src="" alt="theme" onclick="changeTheme()" />
+              <div><a href="/">Eng</a> / <a href="/index_rus.html">Pyc</a></div>
 
-          <div class="mobile-links">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/services">Services</a>
-            <a href="/portfolio">Potfolio</a>
-            <a href="/contact">Contact</a>
+              <div class="mobile-x-button" onclick="closeNav()">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <!------------------------------------->
+            <div class="mobile-links">
+              <a href="/">Home</a>
+              <a href="/about">About</a>
+              <a href="/services">Services</a>
+              <a href="/portfolio">Potfolio</a>
+              <a href="/contact">Contact</a>
+            </div>
+            <!------------------------------------->
           </div>
-
-          <div>theme button</div>
-          <div>language button</div>
         </div>
       </nav>
+
+      <!-- Landing Above The Fold -->
+      <div class="landing">
+        <div class="header">
+          <h1>Small Buisness Web</h1>
+          <h1>Design +</h1>
+          <h1>Development</h1>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -96,3 +113,4 @@
     </main>
   </body>
 </html>
+

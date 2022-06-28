@@ -1,6 +1,16 @@
 // -------------------------------
 //        HORIZONTAL LINES
 // -------------------------------
+.horizontal-lines-wrapper, 
+.verticle-lines-wrapper, 
+.line-v, 
+.line-h {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
 
 .line-h {
     position: absolute;
@@ -10,7 +20,7 @@
 }
 .h0 {
     top: 0%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .h1 {top: 25%;}
 .h2 {top: 50%;}
@@ -33,14 +43,14 @@
     z-index: -999;
 }
 
-.v0 {left: 1%;}
+.v0 {left: 1.5%;}
 .v1 {left: 15%;}
 .v2 {left: 29%;}
 .v3 {left: 43%;}
 .v4 {left: 57%;}
 .v5 {left: 71%;}
 .v6 {left: 85%;}
-.v7 {left: 99%;}
+.v7 {left: 98.5%;}
 
 @media only screen and (max-width: 700px) {
     .v0 {left: 0%}
@@ -53,12 +63,13 @@
     .v7 {display: none;}
 }
 
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 600px) { 
+    
     .v0 {left: 0%}
-    .v1 {left: 33.5%}
-    .v2 {left: 66.5%}
-    .v3 {left: 100%}
-    .v4 {display: none;}
+    .v1 {left: 25%}
+    .v2 {left: 50%}
+    .v3 {left: 75%}
+    .v4 {left: 100%}
     .v5 {display: none;}
     .v6 {display: none;}
     .v7 {display: none;}
