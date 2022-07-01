@@ -18,44 +18,43 @@
 }
 
 .h0 {
-  top: 0%;
-  margin-top: 20px;
+  top: 20px;
 }
 
 .h1 {
-  top: 25%;
+  top: 120px;
 }
 
 .h2 {
-  top: 50%;
+  top: 220px;
 }
 
 .h3 {
-  top: 75%;
+  top: 320px;
 }
 
 .h4 {
-  top: 100%;
+  top: 420px;
 }
 
 .h5 {
-  top: 125%;
+  top: 520px;
 }
 
 .h6 {
-  top: 150%;
+  top: 620px;
 }
 
 .h7 {
-  top: 175%;
+  top: 720px;
 }
 
 .h8 {
-  top: 200%;
+  top: 820px;
 }
 
 .h9 {
-  top: 225%;
+  top: 920px;
 }
 
 .line-v {
@@ -139,7 +138,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .v0 {
     left: 5%;
   }
