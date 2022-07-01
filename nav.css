@@ -10,11 +10,9 @@
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
-    margin: 25px 25px;
-    padding: 20px 0;
-  }
-  .navbar {
-    max-width: 1100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
   }
   .navbar a {
     font-family: Georgia, 'Times New Roman', Times, serif;

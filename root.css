@@ -1,11 +1,14 @@
-* {
-  font-family: 'IM Fell English', serif;
-}
-
 body {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -22,4 +25,9 @@ body {
   --darkSecondaryText0: #ffff00;
   --darkSecondaryText1: #c47a19;
 }
+
+/* Ipad Pro */
+/* Tablets */
+/* Small Desktop */
+/* Regular Desktop */
 /*# sourceMappingURL=root.css.map */
