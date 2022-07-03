@@ -1,4 +1,4 @@
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 801px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7,27 +7,46 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    max-width: 1200px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
     margin-top: 25px;
   }
   .navbar a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    margin: 0 10px;
+    font-size: 11px;
+    margin: 0 8px;
     padding: 10px 10px;
     text-transform: uppercase;
-    color: #333;
+    -webkit-transition: 150ms;
+    transition: 150ms;
   }
   .navbar a:hover {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
     color: orange;
+    -webkit-transition: 150ms;
+    transition: 150ms;
+  }
+  .switcher {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 25px;
+    width: 150px;
+    font-size: 12px;
+  }
+  .switcher img {
+    width: 25px;
+    margin-left: 10px;
   }
   #mobile-menu-open-button,
   #opacity-bg,
@@ -36,11 +55,12 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   nav {
-    margin: 25px;
-    padding: 20px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 25px;
+  }
+  .logo {
+    margin: 0 25px;
   }
   .navbar,
   .switcher {
@@ -73,7 +93,7 @@
     display: flex;
   }
   #opacity-bg {
-    background-color: rgba(64, 64, 64, 0.226);
+    background-color: rgba(255, 255, 255, 0);
     position: fixed;
     top: 0;
     right: 0;

@@ -22,7 +22,11 @@
     <link rel="stylesheet" href="landing.css" />
   </head>
 
-  <body class="light">
+
+  <!-- ------------------------ -->
+  <!--          BODY            -->
+  <!-- ------------------------ -->
+  <body id="body" class="light">
     <div class="horizontal-lines-wrapper">
       <div class="line-h h0"></div>
       <div class="line-h h1"></div>
@@ -54,10 +58,10 @@
         <!-- ------DESKTOP NAV------- -->
         <div class="logo">
           <a href="/">
-            <img src="Logo.png" width="100px" height="50px" alt="Artsha" />
+            <img src="./assets/Logo.png" width="150px" height="50px" alt="Logo" />
+            </div>
           </a>
         </div>
-        
 
         <div class="navbar">
           <a href="/">Home</a>
@@ -68,8 +72,11 @@
         </div>
 
         <div class="switcher">
-          <button><img src="" alt="theme-changer" /></button>
-          <div class="language-switch">Eng / Pyc</div>
+          <div class="language-switch">
+            <a href="/index.html">Eng</a> 
+            | 
+            <a href="/index_ru.html">Pyc</a></div>
+          <img src="./assets/theme.png" onclick="themeChange()" alt="theme-changer" />
         </div>
 
         <!-- appears when width less than 750px -->
@@ -85,7 +92,7 @@
           <div>
             <!------------------------------------->
             <div class="mobile-top">
-              <img src="" alt="theme" onclick="changeTheme()" />
+              <img src="" alt="theme" onclick="themeChange()" />
               <div><a href="/">Eng</a> / <a href="/index_rus.html">Pyc</a></div>
 
               <div class="mobile-x-button" onclick="closeNav()">
@@ -106,7 +113,7 @@
         </div>
       </nav>
 
-      <!-- Landing Above The Fold -->
+      <!-- LANDING / BANNER -->
       <div class="landing">
         <div class="header">
           <h1>Small Buisness Web</h1>

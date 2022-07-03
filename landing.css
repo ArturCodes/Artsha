@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
 .landing {
-  max-width: 1300px !important;
+  max-width: 1100px;
+  margin: 0 auto !important;
 }
 
 .landing .banner {
@@ -10,6 +10,6 @@
 
 .landing h1 {
   text-align: left;
-  font-family: 'IM Fell English', serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 /*# sourceMappingURL=landing.css.map */

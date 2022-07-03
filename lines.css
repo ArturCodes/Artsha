@@ -1,3 +1,4 @@
+@import url(/root.css);
 .horizontal-lines-wrapper,
 .verticle-lines-wrapper,
 .line-v,
@@ -61,7 +62,6 @@
   position: fixed;
   height: 100%;
   top: 0;
-  border-right: 1px solid #d0e7fd;
   z-index: -999;
 }
 

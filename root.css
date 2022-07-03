@@ -1,33 +1,77 @@
-body {
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-}
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 :root {
-  --lightText0: #000000;
-  --lightText1: #ffffff;
-  --lightSecondaryText0: #ffff00;
-  --lightSecondaryText1: #c47a19;
-  --greenText0: #04310c;
-  --greenText1: #1c8f25;
-  --greenSecondaryText0: #ffff00;
-  --greenSecondaryText1: #c47a19;
-  --darkText1: #000000;
-  --darkText0: #ffffff;
-  --darkSecondaryText0: #ffff00;
-  --darkSecondaryText1: #c47a19;
+  --bg-light: rgb(255, 255, 255);
+  --lines-light: #bcdeff;
+  --text-light: black;
+  --highlight-light: orange;
+  --bg-dark: rgb(27, 27, 27);
+  --lines-dark: #353535b2;
+  --text-dark: #d6d6d6;
+  --highlight-dark: orange;
+  --bg-green: rgb(64, 131, 86);
+  --lines-green: rgb(103, 180, 120);
+  --text-green: #ffffff;
+  --highlight-green: orange;
 }
 
-/* Ipad Pro */
-/* Tablets */
-/* Small Desktop */
-/* Regular Desktop */
+.light {
+  height: 100%;
+  background-color: var(--bg-light);
+}
+
+.light h1, .light h2, .light p, .light a, .light div {
+  color: var(--text-light);
+}
+
+.light .line-v {
+  border-right: 1px solid var(--lines-light);
+}
+
+.light .line-h {
+  border-top: 1px solid var(--lines-light);
+}
+
+.dark {
+  height: 100vh;
+  background-color: var(--bg-dark);
+}
+
+.dark h1, .dark h2, .dark p, .dark a, .dark div {
+  color: var(--text-dark);
+}
+
+.dark .line-v {
+  border-right: 1px solid var(--lines-dark);
+}
+
+.dark .line-h {
+  border-top: 1px solid var(--lines-dark);
+}
+
+.green {
+  height: 100vh;
+  background: var(--bg-green);
+}
+
+.green h1, .green h2, .green p, .green a, .green div {
+  color: var(--text-green);
+}
+
+.green .line-v {
+  border-right: 1px solid var(--lines-green);
+}
+
+.green .line-h {
+  border-top: 1px solid var(--lines-green);
+}
 /*# sourceMappingURL=root.css.map */

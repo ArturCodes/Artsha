@@ -1,3 +1,5 @@
+@import url(/root.css);
+
 // -------------------------------
 //        HORIZONTAL LINES
 // -------------------------------
@@ -36,7 +38,6 @@
     position: fixed;
     height: 100%;
     top: 0;
-    border-right: 1px solid #d0e7fd;
     z-index: -999;
 }
 
