@@ -14,10 +14,11 @@
             align-items: center;
     margin: 0 auto;
     margin-top: 25px;
+    height: 90px;
   }
   .navbar a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 16px;
     margin: 0 8px;
     padding: 10px 10px;
     text-transform: uppercase;
@@ -28,6 +29,10 @@
     color: orange;
     -webkit-transition: 150ms;
     transition: 150ms;
+  }
+  .logo {
+    position: relative;
+    top: 5px;
   }
   .switcher {
     cursor: pointer;
@@ -41,8 +46,8 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0 25px;
-    width: 150px;
-    font-size: 12px;
+    width: 200px;
+    font-size: 16px;
   }
   .switcher img {
     width: 25px;
@@ -61,6 +66,11 @@
   }
   .logo {
     margin: 0 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 5px;
   }
   .navbar,
   .switcher {
