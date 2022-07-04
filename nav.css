@@ -1,4 +1,4 @@
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12,9 +12,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 25px auto;
     height: 90px;
+  }
+  .navbar {
+    margin: 0 auto;
   }
   .navbar a {
     text-decoration: none;
@@ -22,17 +24,21 @@
     margin: 0 8px;
     padding: 10px 10px;
     text-transform: uppercase;
-    -webkit-transition: 150ms;
-    transition: 150ms;
+    -webkit-transition: 250ms;
+    transition: 250ms;
   }
   .navbar a:hover {
     color: orange;
     -webkit-transition: 150ms;
     transition: 150ms;
+    text-decoration: underline;
+    text-underline-position: under;
   }
   .logo {
+    width: 200px;
     position: relative;
     top: 5px;
+    margin-left: 10px;
   }
   .switcher {
     cursor: pointer;
@@ -49,6 +55,9 @@
     width: 200px;
     font-size: 16px;
   }
+  .switcher a {
+    margin: 0 5px;
+  }
   .switcher img {
     width: 25px;
     margin-left: 10px;
@@ -60,17 +69,32 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 999px) {
   nav {
     margin-top: 25px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .logo {
-    margin: 0 25px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    width: 200px;
     top: 5px;
+    margin-left: 10px;
   }
   .navbar,
   .switcher {
@@ -78,7 +102,7 @@
   }
   #mobile-menu-open-button {
     position: absolute;
-    top: 30px;
+    top: 55px;
     right: 30px;
   }
   #mobile-menu-open-button div {
@@ -130,12 +154,12 @@
   }
   .mobile-x-button {
     position: absolute;
-    top: 3px;
+    top: 25px;
     right: 3px;
   }
   .mobile-x-button div {
     height: 3px;
-    background-color: black;
+    background-color: white;
   }
   .mobile-x-button div:nth-child(1) {
     position: absolute;
@@ -187,7 +211,7 @@
             flex-direction: column;
     padding: 15px;
     margin-right: 15px;
-    margin-top: 18px;
+    margin-top: 25px;
     margin-left: 15px;
   }
   .mobile-top img {

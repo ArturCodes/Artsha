@@ -1,33 +1,38 @@
 //  DESKTOP NAV
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin: 0 auto;
-        margin-top: 25px;
+        margin: 25px auto;
         height: 90px;
     }
 
     .navbar {
+        margin: 0 auto;
+       
         a {
             text-decoration: none;
             font-size: 16px;
             margin: 0 8px;
             padding: 10px 10px;
             text-transform: uppercase;
-            transition: 150ms;
+            transition: 250ms;
             &:hover {
                 color: orange;
                 transition: 150ms;
+                text-decoration: underline;
+                text-underline-position: under;
             }
         }
     }
 
     .logo {
+        width: 200px;
         position: relative;
         top: 5px;
+        margin-left: 10px;
     }
 
     .switcher {
@@ -38,6 +43,9 @@
         margin: 0 25px;
         width: 200px;
         font-size: 16px;
+        a {
+            margin: 0 5px;
+        }
         img {
             width: 25px;
             margin-left: 10px;
@@ -56,16 +64,23 @@
 //     MOBILE @ MEDIA SCREEN
 // -------------------------------
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 999px) {
     // Outer Mobile Menu
     nav {
         margin-top: 25px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
     }
     .logo {
-        margin: 0 25px;
         align-items: center;
         position: relative;
+        width: 200px;
         top: 5px;
+        margin-left: 10px;
     }
 
     .navbar,
@@ -75,9 +90,9 @@
 
     #mobile-menu-open-button {
         position: absolute;
-        top: 30px;
+        top: 55px;
         right: 30px;
-
+        
         div {
             width: 24px;
             height: 3px;
@@ -129,11 +144,11 @@
     //mobile inner menu X button
     .mobile-x-button {
         position: absolute;
-        top: 3px;
+        top: 25px;
         right: 3px;
         div {
             height: 3px;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
         }
         div:nth-child(1) {
             position: absolute;
@@ -175,7 +190,7 @@
         flex-direction: column;
         padding: 15px;
         margin-right: 15px;
-        margin-top: 18px;
+        margin-top: 25px;
         margin-left: 15px;
         img {
             margin-bottom: 15px;

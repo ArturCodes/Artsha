@@ -11,10 +11,7 @@
     <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap"
-      rel="stylesheet"
-    />
+   
     <!-- css -->
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="lines.css" />
@@ -26,8 +23,8 @@
   <!-- ------------------------ -->
   <!--          BODY            -->
   <!-- ------------------------ -->
-  <body id="body" class="light">
-    <div class="horizontal-lines-wrapper">
+  <body onload="checkTheme()" id="body" class="dark">
+    <div aria-hidden="true" class="horizontal-lines-wrapper">
       <div class="line-h h0"></div>
       <div class="line-h h1"></div>
       <div class="line-h h2"></div>
@@ -39,8 +36,7 @@
       <div class="line-h h8"></div>
       <div class="line-h h9"></div>
     </div>
-    <div class="verticle-lines-wrapper">
-      <div class="line-v v0"></div>
+    <div aria-hidden="true" class="verticle-lines-wrapper">
       <div class="line-v v1"></div>
       <div class="line-v v2"></div>
       <div class="line-v v3"></div>
@@ -50,6 +46,7 @@
       <div class="line-v v7"></div>
       <div class="line-v v8"></div>
       <div class="line-v v9"></div>
+      <div class="line-v v0"></div>
     </div>
 
     <header>
@@ -73,9 +70,9 @@
 
         <div class="switcher">
           <div class="language-switch">
-            <a href="/index.html">Eng</a> 
+            <a href="/index.html">ENG</a> 
             | 
-            <a href="/index_ru.html">Pyc</a></div>
+            <a href="/index_ru.html">RU</a></div>
           <img id="theme" src="./assets/theme.png" onclick="themeChange()" alt="theme-changer" />
         </div>
 
@@ -92,7 +89,8 @@
           <div>
             <!------------------------------------->
             <div class="mobile-top">
-              <img src="" alt="theme" onclick="themeChange()" />
+              <img src="./assets/theme-white.png" width="25px"
+              height="25px" alt="theme" onclick="themeChange()" />
               <div><a href="/">Eng</a> / <a href="/index_rus.html">Pyc</a></div>
 
               <div class="mobile-x-button" onclick="closeNav()">
@@ -116,9 +114,9 @@
       <!-- LANDING / BANNER -->
       <div class="landing">
         <div class="header">
-          <h1>Small Buisness Web</h1>
-          <h1>Design +</h1>
-          <h1>Development</h1>
+          <h1 class="intro">Small Buisness Web <br>
+           Design + <br>
+           Development</h1>
         </div>
       </div>
     </header>

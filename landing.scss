@@ -1,13 +1,53 @@
+//  DESKTOP NAV
 .landing {
     max-width: 1100px;
-    margin: 0 auto !important;
+    height: 300px;
+    margin: 0 auto;
 
-    .banner {
-        margin-left: 10%;
-        margin-top: 150px;
+    display: flex;
+    align-items: center;
+
+    .intro {
+        position: absolute;
+        top: 210px;
+        font-size: 48px;
+        line-height: 1.5em;
+        
+
+        &::before {
+            content: "S";
+            color: rgb(236, 158, 14);
+            font-size: 250px;
+            font-weight: 900;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            z-index: -100;
+            position: absolute;
+            top: -25px;
+        }
+
+        &::after {
+            content: "";
+            background-image: url("./assets/dots.png");
+            background-size: 400px 400px;
+            background-repeat: no-repeat;
+            display: block;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
     }
-    h1 {
-        text-align: left;
-        font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media only screen and (min-width: 801px) {
+}
+
+// -------------------------------
+//     MOBILE @ MEDIA SCREEN
+// -------------------------------
+
+@media only screen and (max-width: 800px) {
+    .landing {
+        width: auto;
+        margin: 0 20px;
+        height: 200px;
     }
 }
