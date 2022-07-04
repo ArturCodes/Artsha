@@ -1,3 +1,7 @@
+header {
+  height: 75vh;
+}
+
 @media only screen and (min-width: 1000px) {
   nav {
     display: -webkit-box;
@@ -218,8 +222,12 @@
             align-items: center;
     padding: 15px;
     margin-top: 50px;
+    color: white;
   }
   .mobile-bottom:hover {
+    color: orange;
+  }
+  .mobile-bottom div:hover {
     color: orange;
   }
   .mobile-bottom img {

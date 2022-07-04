@@ -1,34 +1,24 @@
 
 
-// Check for theme & set it
-// if (theme) {
-//     const body = document.body;
-//     const theme = localStorage.getItem('theme')
-
-//     body.removeAttribute('class');
-//     body.classList.add(theme)
-// }
-
 
 function checkTheme() {
     const body = document.body;
     const img = document.getElementById('logo')
     const theme = document.getElementById('theme')
 
-    const localtheme = localStorage(theme)
-    
     if (body.classList.contains('dark')) {
+        theme.src = "./assets/theme-white.png";
+        img.src = "./assets/logo-white.png";
+
+    } else if (body.classList.contains('blue')) {
         theme.src = "./assets/theme-white.png";
         img.src = "./assets/logo-white.png";
 
     } else if (body.classList.contains('light')) {
         img.src = "./assets/logo.png";
         theme.src = "./assets/theme.png"
-        
-    } else if (body.classList.contains('blue')) {
-        theme.src = "./assets/theme-white.png";
-        img.src = "./assets/logo-white.png";
     }
+        
 
 }
 
