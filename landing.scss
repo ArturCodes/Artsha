@@ -1,46 +1,54 @@
- 
 //  DESKTOP NAV
 .landing {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 150px auto 0;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    h1 {
-        position: relative;
-        font-size: 3.5em;
-        line-height: 1.3em;
+    .landing-left {
+        h1 {
+            position: relative;
+            font-size: 3.5em;
+            line-height: 1.3em;
 
-        &::before {
-            content: "S";
-            color: #f2c610;
-            font-size: 200px;
-            font-weight: 900;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            z-index: -100;
-            position: absolute;
-            top: 20px;
-            left: -105px;
+            &::before {
+                content: "S";
+                color: #f2c610;
+                font-size: 175px;
+                font-weight: 900;
+                font-family: "poppins", sans-serif;
+                z-index: -100;
+                position: absolute;
+                top: 0;
+                left: -85px;
+            }
+
+            &::after {
+                content: "";
+                background-image: url("./assets/dots.png");
+                background-size: 300px 300px;
+                background-repeat: no-repeat;
+                display: block;
+                position: absolute;
+                height: 300px;
+                width: 300px;
+                top: -90px;
+                left: -250px;
+            }
         }
-
-        &::after {
-            content: "";
-            background-image: url("./assets/dots.png");
-            background-size: 300px 300px;
-            background-repeat: no-repeat;
-            display: block;
-            position: absolute;
-            height: 300px;
-            width: 300px;
-            top: -90px;
-            left: -250px;
+        
+        p {
+            width: 550px;
+            margin-top: 25px;
+            font-size: 1.2em;
+            line-height: 1.8em;
         }
     }
-    p {
-        width: 550px;
-        margin-top: 25px;
-        font-size: 1.2em;
-        line-height: 1.8em;
+    .landing-right {
+        position: relative;
+        width: 50px;
+        right: 50px;
     }
 }
 

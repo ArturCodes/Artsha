@@ -9,6 +9,10 @@
     list-style-type: none;
 }
 
+html, body {
+    // height: 400vh;
+}
+
 :root {
     //light theme
     --bg-light: rgb(255, 255, 255);
@@ -50,8 +54,9 @@
 
 //dark theme
 .dark {
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-dark);
+    background-image: linear-gradient(to right rgb(133, 52, 52), rgb(133, 133, 133));
     h1, h2, p, a, div {
         color: var(--text-dark);
     }

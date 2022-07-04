@@ -28,11 +28,14 @@
     transition: 250ms;
   }
   .navbar a:hover {
-    color: orange;
+    color: #f2c610;
     -webkit-transition: 150ms;
     transition: 150ms;
     text-decoration: underline;
     text-underline-position: under;
+  }
+  .navbar a:last-child {
+    color: #f2c610;
   }
   .logo {
     width: 200px;

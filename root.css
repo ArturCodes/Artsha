@@ -42,8 +42,10 @@
 }
 
 .dark {
-  height: 100vh;
+  height: 100%;
   background-color: var(--bg-dark);
+  background-image: -webkit-gradient(linear, right #853434, from(#858585));
+  background-image: linear-gradient(to right #853434, #858585);
 }
 
 .dark h1, .dark h2, .dark p, .dark a, .dark div {

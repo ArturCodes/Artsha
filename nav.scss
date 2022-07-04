@@ -20,10 +20,13 @@
             text-transform: uppercase;
             transition: 250ms;
             &:hover {
-                color: orange;
+                color: #f2c610;;
                 transition: 150ms;
                 text-decoration: underline;
                 text-underline-position: under;
+            }
+            &:last-child {
+                color: #f2c610;
             }
         }
     }
