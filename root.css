@@ -13,15 +13,15 @@
   --bg-light: rgb(255, 255, 255);
   --lines-light: #bcdeff;
   --text-light: black;
-  --highlight-light: orange;
+  --highlight-light: #F2C610;
   --bg-dark: rgb(27, 27, 27);
   --lines-dark: #353535b2;
   --text-dark: #d6d6d6;
-  --highlight-dark: orange;
+  --highlight-dark: #F2C610;
   --bg-blue: rgb(60, 115, 141);
   --lines-blue: rgb(82, 138, 175);
   --text-blue: #ffffff;
-  --highlight-blue: orange;
+  --highlight-blue: #F2C610;
 }
 
 .light {

@@ -1,7 +1,7 @@
-.banner {
-  max-width: 1100px;
+.landing {
+  max-width: 1000px;
   height: 300px;
-  margin: 0 auto;
+  margin: 150px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,25 +10,27 @@
           align-items: center;
 }
 
-.banner .intro {
+.landing .title {
   position: relative;
-  top: 210px;
   font-size: 48px;
   line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000000;
 }
 
-.banner .intro::before {
+.landing .title::before {
   content: "S";
-  color: #ec9e0e;
+  color: #F2C610;
   font-size: 250px;
   font-weight: 900;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   z-index: -100;
   position: absolute;
-  top: -25px;
+  top: 1  5px;
+  left: -80px;
+  text-shadow: none;
 }
 
-.banner .intro::after {
+.landing .title::after {
   content: "";
   background-image: url("./assets/dots.png");
   background-size: 400px 400px;
@@ -36,14 +38,8 @@
   display: block;
   height: 400px;
   width: 400px;
-  position: relative;
-}
-
-@media only screen and (max-width: 800px) {
-  .banner {
-    width: auto;
-    margin: 0 20px;
-    height: 200px;
-  }
+  position: absolute;
+  top: -140px;
+  left: -200px;
 }
 /*# sourceMappingURL=landing.css.map */
