@@ -24,12 +24,12 @@
     --text-dark: #d6d6d6;
     --highlight-dark: orange;
 
-    //green theme
-    --bg-green: rgb(64, 131, 86);
-    --lines-green: rgb(103, 180, 120);
+    //blue theme
+    --bg-blue: rgb(60, 115, 141);
+    --lines-blue: rgb(144, 182, 207);
 
-    --text-green: #ffffff;
-    --highlight-green: orange;
+    --text-blue: #ffffff;
+    --highlight-blue: orange;
 }
  
 
@@ -63,18 +63,18 @@
     }
 }
 
-//green theme
-.green {
+//blue theme
+.blue {
     height: 100vh;
-    background: var(--bg-green);
+    background: var(--bg-blue);
     h1, h2, p, a, div {
-        color: var(--text-green);
+        color: var(--text-blue);
     }
 
     .line-v {
-        border-right: 1px solid var(--lines-green);
+        border-right: 1px solid var(--lines-blue);
     }
     .line-h {
-        border-top: 1px solid var(--lines-green);
+        border-top: 1px solid var(--lines-blue);
     }
 }

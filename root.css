@@ -18,10 +18,10 @@
   --lines-dark: #353535b2;
   --text-dark: #d6d6d6;
   --highlight-dark: orange;
-  --bg-green: rgb(64, 131, 86);
-  --lines-green: rgb(103, 180, 120);
-  --text-green: #ffffff;
-  --highlight-green: orange;
+  --bg-blue: rgb(60, 115, 141);
+  --lines-blue: rgb(144, 182, 207);
+  --text-blue: #ffffff;
+  --highlight-blue: orange;
 }
 
 .light {
@@ -58,20 +58,20 @@
   border-top: 1px solid var(--lines-dark);
 }
 
-.green {
+.blue {
   height: 100vh;
-  background: var(--bg-green);
+  background: var(--bg-blue);
 }
 
-.green h1, .green h2, .green p, .green a, .green div {
-  color: var(--text-green);
+.blue h1, .blue h2, .blue p, .blue a, .blue div {
+  color: var(--text-blue);
 }
 
-.green .line-v {
-  border-right: 1px solid var(--lines-green);
+.blue .line-v {
+  border-right: 1px solid var(--lines-blue);
 }
 
-.green .line-h {
-  border-top: 1px solid var(--lines-green);
+.blue .line-h {
+  border-top: 1px solid var(--lines-blue);
 }
 /*# sourceMappingURL=root.css.map */

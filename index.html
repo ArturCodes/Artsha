@@ -23,7 +23,7 @@
   <!-- ------------------------ -->
   <!--          BODY            -->
   <!-- ------------------------ -->
-  <body onload="checkTheme()" id="body" class="dark">
+  <body onload="checkTheme()" id="body" class="blue">
     <div aria-hidden="true" class="horizontal-lines-wrapper">
       <div class="line-h h0"></div>
       <div class="line-h h1"></div>
@@ -86,19 +86,9 @@
         <!-- ------MOBILE NAV ------ -->
         <div id="opacity-bg" class="closeNav" onclick="closeNav()"></div>
         <div id="mobile-nav" class="closeNav">
-          <div>
-            <!------------------------------------->
-            <div class="mobile-top">
-              <img src="./assets/theme-white.png" width="25px"
-              height="25px" alt="theme" onclick="themeChange()" />
-              <div><a href="/">Eng</a> / <a href="/index_rus.html">Pyc</a></div>
 
-              <div class="mobile-x-button" onclick="closeNav()">
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-            <!------------------------------------->
+          <div>
+            <!--------MOBILE LINKS----------->
             <div class="mobile-links">
               <a href="/">Home</a>
               <a href="/about">About</a>
@@ -106,8 +96,22 @@
               <a href="/portfolio">Potfolio</a>
               <a href="/contact">Contact</a>
             </div>
-            <!------------------------------------->
+            <!---------MOBILE SWITCHER----------->
+            <div class="mobile-bottom">
+              <img 
+                src="./assets/theme-white.png" 
+                alt="theme"
+                onclick="themeChange()" />
+              <div><a href="/">ENG</a> | <a href="/index_rus.html">RUS</a></div>
+
+              <div class="mobile-x-button" onclick="closeNav()">
+                <div></div>
+                <div></div>
+              </div>
+
+            </div>
           </div>
+          
         </div>
       </nav>
 

@@ -14,6 +14,8 @@ function checkTheme() {
     const body = document.body;
     const img = document.getElementById('logo')
     const theme = document.getElementById('theme')
+
+    const localtheme = localStorage(theme)
     
     if (body.classList.contains('dark')) {
         theme.src = "./assets/theme-white.png";
@@ -23,7 +25,7 @@ function checkTheme() {
         img.src = "./assets/logo.png";
         theme.src = "./assets/theme.png"
         
-    } else if (body.classList.contains('green')) {
+    } else if (body.classList.contains('blue')) {
         theme.src = "./assets/theme-white.png";
         img.src = "./assets/logo-white.png";
     }
@@ -43,13 +45,13 @@ function themeChange() {
         localStorage.setItem('theme', 'dark');
 
     } else if (body.classList.contains('dark')) {
-        body.classList.replace('dark', 'green');
+        body.classList.replace('dark', 'blue');
         img.src = "./assets/logo-white.png";
         theme.src = "./assets/theme-white.png"
-        localStorage.setItem('theme', 'green');
+        localStorage.setItem('theme', 'blue');
 
-    } else if (body.classList.contains('green')) {
-        body.classList.replace('green', 'light');
+    } else if (body.classList.contains('blue')) {
+        body.classList.replace('blue', 'light');
         img.src = "./assets/logo.png";
         theme.src = "./assets/theme.png"
         localStorage.setItem('theme', 'light');
