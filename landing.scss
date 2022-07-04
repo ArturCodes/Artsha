@@ -1,47 +1,47 @@
+ 
 //  DESKTOP NAV
 .landing {
-    max-width: 1000px;
-    height: 300px;
-    margin: 150px auto;
-
+    max-width: 1100px;
+    margin: 150px auto 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
-    .title {
+    h1 {
         position: relative;
-        font-size: 48px;
-        line-height: 1.5em;
-        text-shadow: 2px 2px 2px #000000;
-        
+        font-size: 3.5em;
+        line-height: 1.3em;
 
         &::before {
             content: "S";
-            color: #F2C610;
-            font-size: 250px;
+            color: #f2c610;
+            font-size: 200px;
             font-weight: 900;
-            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             z-index: -100;
             position: absolute;
-            top: 1  5px;
-            left: -80px;
-            text-shadow: none;
+            top: 20px;
+            left: -105px;
         }
 
         &::after {
             content: "";
             background-image: url("./assets/dots.png");
-            background-size: 400px 400px;
+            background-size: 300px 300px;
             background-repeat: no-repeat;
             display: block;
-            height: 400px;
-            width: 400px;
             position: absolute;
-            top: -140px;
-            left: -200px;
+            height: 300px;
+            width: 300px;
+            top: -90px;
+            left: -250px;
         }
     }
-}
-@media only screen and (min-width: 801px) {
+    p {
+        width: 550px;
+        margin-top: 25px;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
 }
 
 // -------------------------------
@@ -49,5 +49,4 @@
 // -------------------------------
 
 @media only screen and (max-width: 800px) {
-
 }
