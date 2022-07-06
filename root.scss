@@ -54,6 +54,7 @@ html, body {
     .line-h {
         border-top: 1px solid var(--lines-light);
     }
+     
 }
 
 //dark theme
@@ -65,10 +66,6 @@ html, body {
     }
     .secondary-font-color {
         color: black;
-    }
-    .white {
-        color: white !important;
-        background-color: white;
     }
      
     .line-v {
@@ -89,7 +86,7 @@ html, body {
     .secondary-font-color {
         color: black;
     }
-
+       
     .line-v {
         border-right: 1px solid var(--lines-blue);
     }

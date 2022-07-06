@@ -62,11 +62,6 @@ html, body {
   color: black;
 }
 
-.dark .white {
-  color: white !important;
-  background-color: white;
-}
-
 .dark .line-v {
   border-right: 1px solid var(--lines-dark);
 }

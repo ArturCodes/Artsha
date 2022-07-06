@@ -68,6 +68,12 @@
 }
 
 @media only screen and (max-width: 999px) {
+  .white {
+    background-color: white !important;
+  }
+  .white-c {
+    color: white;
+  }
   nav {
     margin-top: 25px;
     height: 90px;
@@ -222,8 +228,8 @@
   .mobile-bottom:hover {
     color: #F2C610;
   }
-  .mobile-bottom div:hover {
-    color: #F2C610;
+  .mobile-bottom div a {
+    color: white;
   }
   .mobile-bottom img {
     cursor: pointer;

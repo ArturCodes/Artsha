@@ -15,6 +15,7 @@
             &::before {
                 content: "S";
                 color: #f2c610;
+                user-select: none;
                 font-size: 175px;
                 font-weight: 900;
                 font-family: "poppins", sans-serif;
@@ -26,6 +27,7 @@
 
             &::after {
                 content: "";
+                user-select: none;
                 background-image: url("./assets/dots.png");
                 background-size: 300px 300px;
                 background-repeat: no-repeat;
@@ -71,13 +73,21 @@
 // -------------------------------
 
 @media only screen and (max-width: 1100px) {
+    .landing {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
     .landing-left {
         h1 {
-            font-size: 1.5em;
+            font-size: 2.3em !important;
         }
         margin: 0 auto;
     }
     .landing-right {
-        display: none;
+        margin-top: 25px;
+        width: 15px !important;
+        right: 15px !important;
     }
 }
