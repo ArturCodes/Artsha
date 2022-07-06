@@ -9,6 +9,10 @@
   list-style-type: none;
 }
 
+html, body {
+  height: 400vh;
+}
+
 :root {
   --bg-light: rgb(255, 255, 255);
   --lines-light: #bcdeff;
@@ -18,8 +22,8 @@
   --lines-dark: #353535b2;
   --text-dark: #d6d6d6;
   --highlight-dark: #F2C610;
-  --bg-blue: rgb(60, 115, 141);
-  --lines-blue: rgb(82, 138, 175);
+  --bg-blue: #3c738d;
+  --lines-blue: #558ba3;
   --text-blue: #ffffff;
   --highlight-blue: #F2C610;
 }
@@ -33,6 +37,10 @@
   color: var(--text-light);
 }
 
+.light .font-color {
+  color: black;
+}
+
 .light .line-v {
   border-right: 1px solid var(--lines-light);
 }
@@ -44,12 +52,19 @@
 .dark {
   height: 100%;
   background-color: var(--bg-dark);
-  background-image: -webkit-gradient(linear, right #853434, from(#858585));
-  background-image: linear-gradient(to right #853434, #858585);
 }
 
 .dark h1, .dark h2, .dark p, .dark a, .dark div {
   color: var(--text-dark);
+}
+
+.dark .secondary-font-color {
+  color: black;
+}
+
+.dark .white {
+  color: white !important;
+  background-color: white;
 }
 
 .dark .line-v {
@@ -67,6 +82,10 @@
 
 .blue h1, .blue h2, .blue p, .blue a, .blue div {
   color: var(--text-blue);
+}
+
+.blue .secondary-font-color {
+  color: black;
 }
 
 .blue .line-v {

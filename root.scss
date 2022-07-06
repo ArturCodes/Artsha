@@ -10,7 +10,7 @@
 }
 
 html, body {
-    // height: 400vh;
+    height: 400vh;
 }
 
 :root {
@@ -29,8 +29,8 @@ html, body {
     --highlight-dark: #F2C610;
 
     //blue theme
-    --bg-blue: rgb(60, 115, 141);
-    --lines-blue: rgb(82, 138, 175);
+    --bg-blue: #3c738d;
+    --lines-blue: #558ba3;
 
     --text-blue: #ffffff;
     --highlight-blue: #F2C610;
@@ -44,6 +44,10 @@ html, body {
     h1, h2, p, a, div {
         color: var(--text-light);
     }
+     
+    .font-color  {
+        color: black;
+    }
     .line-v {
         border-right: 1px solid var(--lines-light);
     }
@@ -56,10 +60,17 @@ html, body {
 .dark {
     height: 100%;
     background-color: var(--bg-dark);
-    background-image: linear-gradient(to right rgb(133, 52, 52), rgb(133, 133, 133));
     h1, h2, p, a, div {
         color: var(--text-dark);
     }
+    .secondary-font-color {
+        color: black;
+    }
+    .white {
+        color: white !important;
+        background-color: white;
+    }
+     
     .line-v {
         border-right: 1px solid var(--lines-dark);
     }
@@ -74,6 +85,9 @@ html, body {
     background: var(--bg-blue);
     h1, h2, p, a, div {
         color: var(--text-blue);
+    }
+    .secondary-font-color {
+        color: black;
     }
 
     .line-v {

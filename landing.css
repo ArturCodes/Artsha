@@ -48,9 +48,37 @@
   line-height: 1.8em;
 }
 
+.landing .landing-left button {
+  margin-top: 35px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  background-color: #f2c610;
+  border-radius: 25px;
+  border-color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.landing .landing-left button:hover {
+  border-color: orange;
+}
+
 .landing .landing-right {
   position: relative;
   width: 50px;
   right: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .landing-left {
+    margin: 0 auto;
+  }
+  .landing-left h1 {
+    font-size: 1.5em;
+  }
+  .landing-right {
+    display: none;
+  }
 }
 /*# sourceMappingURL=landing.css.map */

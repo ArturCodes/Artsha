@@ -37,12 +37,26 @@
                 left: -250px;
             }
         }
-        
+
         p {
             width: 550px;
             margin-top: 25px;
             font-size: 1.2em;
             line-height: 1.8em;
+        }
+        button {
+            margin-top: 35px;
+            width: 125px;
+            height: 35px;
+            text-align: center;
+            background-color: #f2c610;
+            border-radius: 25px;
+            border-color: white;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover {
+                border-color: orange;
+            }
         }
     }
     .landing-right {
@@ -56,5 +70,14 @@
 //     MOBILE @ MEDIA SCREEN
 // -------------------------------
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
+    .landing-left {
+        h1 {
+            font-size: 1.5em;
+        }
+        margin: 0 auto;
+    }
+    .landing-right {
+        display: none;
+    }
 }
