@@ -44,7 +44,9 @@ html, body {
     h1, h2, p, a, div {
         color: var(--text-light);
     }
-     
+    .secondary-font-color {
+        color: black !important;
+    } 
     .font-color  {
         color: black;
     }

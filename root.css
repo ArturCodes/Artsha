@@ -37,6 +37,10 @@ html, body {
   color: var(--text-light);
 }
 
+.light .secondary-font-color {
+  color: black !important;
+}
+
 .light .font-color {
   color: black;
 }

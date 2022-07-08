@@ -1,108 +1,89 @@
-.landing {
-  max-width: 1000px;
-  margin: 150px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.landing .landing-left h1 {
-  position: relative;
-  font-size: 3.5em;
-  line-height: 1.3em;
-}
-
-.landing .landing-left h1::before {
-  content: "S";
-  color: #f2c610;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  font-size: 175px;
-  font-weight: 900;
-  font-family: "poppins", sans-serif;
-  z-index: -100;
-  position: absolute;
-  top: 0;
-  left: -85px;
-}
-
-.landing .landing-left h1::after {
-  content: "";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: url("./assets/dots.png");
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
-  display: block;
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  top: -90px;
-  left: -250px;
-}
-
-.landing .landing-left p {
-  width: 550px;
-  margin-top: 25px;
-  font-size: 1.2em;
-  line-height: 1.8em;
-}
-
-.landing .landing-left button {
-  margin-top: 35px;
-  width: 125px;
-  height: 35px;
-  text-align: center;
-  background-color: #f2c610;
-  border-radius: 25px;
-  border-color: white;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.landing .landing-left button:hover {
-  border-color: orange;
-}
-
-.landing .landing-right {
-  position: relative;
-  width: 50px;
-  right: 50px;
-}
-
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1101px) {
   .landing {
+    max-width: 1000px;
+    margin: 100px auto 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .landing .landing-left h1 {
+    position: relative;
+    font-size: 3.5em;
+    line-height: 1.3em;
+    z-index: 500;
+  }
+  .landing .landing-left h1::before {
+    content: "S";
+    color: #f2c610;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 175px;
+    font-weight: 900;
+    font-family: "poppins", sans-serif;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: -85px;
+  }
+  .landing .landing-left p {
+    width: 550px;
+    margin-top: 25px;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+  .landing .landing-left p::after {
+    content: "";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    background-image: url("./assets/dots.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 120px;
+    left: 50px;
+  }
+  .landing .landing-left button {
+    margin-top: 35px;
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    background-color: #f2c610;
+    border-radius: 25px;
+    border-color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .landing .landing-left button:hover {
+    border-color: orange;
+  }
+  .landing .landing-right {
+    position: relative;
+    width: 50px;
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1099px) and (min-width: 600px) {
+  .landing {
+    width: 75%;
+    margin: 100px auto;
   }
   .landing-left {
     margin: 0 auto;
   }
   .landing-left h1 {
-    font-size: 2.3em !important;
-  }
-  .landing-right {
-    margin-top: 25px;
-    width: 15px !important;
-    right: 15px !important;
+    font-size: 3.5em;
   }
 }
 /*# sourceMappingURL=landing.css.map */
