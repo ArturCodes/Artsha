@@ -28,12 +28,6 @@ html, body {
     --text-dark: #d6d6d6;
     --highlight-dark: #F2C610;
 
-    //blue theme
-    --bg-blue: #3c738d;
-    --lines-blue: #558ba3;
-
-    --text-blue: #ffffff;
-    --highlight-blue: #F2C610;
 }
  
 
@@ -77,22 +71,4 @@ html, body {
         border-top: 1px solid var(--lines-dark);
     }
 }
-
-//blue theme
-.blue {
-    height: 100vh;
-    background: var(--bg-blue);
-    h1, h2, p, a, div {
-        color: var(--text-blue);
-    }
-    .secondary-font-color {
-        color: black;
-    }
-       
-    .line-v {
-        border-right: 1px solid var(--lines-blue);
-    }
-    .line-h {
-        border-top: 1px solid var(--lines-blue);
-    }
-}
+ 

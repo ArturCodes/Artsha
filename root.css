@@ -22,10 +22,6 @@ html, body {
   --lines-dark: #353535b2;
   --text-dark: #d6d6d6;
   --highlight-dark: #F2C610;
-  --bg-blue: #3c738d;
-  --lines-blue: #558ba3;
-  --text-blue: #ffffff;
-  --highlight-blue: #F2C610;
 }
 
 .light {
@@ -72,26 +68,5 @@ html, body {
 
 .dark .line-h {
   border-top: 1px solid var(--lines-dark);
-}
-
-.blue {
-  height: 100vh;
-  background: var(--bg-blue);
-}
-
-.blue h1, .blue h2, .blue p, .blue a, .blue div {
-  color: var(--text-blue);
-}
-
-.blue .secondary-font-color {
-  color: black;
-}
-
-.blue .line-v {
-  border-right: 1px solid var(--lines-blue);
-}
-
-.blue .line-h {
-  border-top: 1px solid var(--lines-blue);
 }
 /*# sourceMappingURL=root.css.map */
