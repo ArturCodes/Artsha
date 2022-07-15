@@ -26,7 +26,7 @@
   <!-- ------------------------ -->
   <!--          BODY            -->
   <!-- ------------------------ -->
-  <body onclick="changeTheme()" id="body" class="dark">
+  <body onload="checkTheme()" id="body" class="dark">
     <!-- ------LINES------ -->
     <div aria-hidden="true" class="horizontal-lines-wrapper">
       <div class="line-h h0"></div>
@@ -77,7 +77,7 @@
             <a href="/index.html">ENG</a> 
             | 
             <a href="/index_ru.html">RU</a></div>
-          <img id="theme" src="./assets/theme.png" onclick="themeChange()" alt="theme-changer" />
+          <img id="theme" src="./assets/theme.png" onclick="changeTheme()" alt="theme-changer" />
         </div>
 
         <!-- appears when width less than 750px -->
