@@ -23,7 +23,7 @@
                     font-family: "poppins", sans-serif;
                     z-index: -100;
                     position: absolute;
-                    top: 0;
+                    top: 0px;
                     left: -85px;
                 }
 
@@ -38,15 +38,16 @@
                     content: "";
                     user-select: none;
                     pointer-events: none;
-                    background-image: url("./assets/dots.png");
+                    background: url("./assets/dots.png");
                     background-size: 300px 300px;
                     background-repeat: no-repeat;
-                    // display: block;
-                    position: absolute;
+                    display: block;
+                    position: relative;
                     height: 300px;
                     width: 300px;
-                    top: 120px;
-                    left: 50px;
+                    z-index: -100;
+                    top: -440px;
+                    left: -200px;
                 }
             }
             button {
@@ -67,7 +68,8 @@
         .landing-right {
             position: relative;
             width: 50px;
-            right: 50px;
+            top: 5px;
+            right: 15px;
         }
     }
 }
