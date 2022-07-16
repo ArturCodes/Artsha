@@ -1,7 +1,7 @@
 .what-we-do {
   display: block;
-  width: 900px;
-  margin: 150px auto;
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -11,13 +11,69 @@
 }
 
 .what-we-do h1::before {
-  content: 'W';
+  content: "W";
   font-family: "poppins", sans-serif;
   font-size: 150px;
-  position: absolute;
+  position: relative;
   color: #f2c610;
   z-index: -100;
-  top: -115px;
-  left: 190px;
+  top: 0px;
+  left: 30px;
+}
+
+@media only screen and (max-width: 599px) {
+  .what-we-do h1 {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2.5em;
+  }
+  .what-we-do h1::before {
+    content: "W";
+    color: #f2c610;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 125px;
+    font-weight: 900;
+    font-family: "poppins", sans-serif;
+    z-index: -100;
+    position: relative;
+    top: 50px;
+    left: -110px;
+  }
+  .what-we-do span::before {
+    content: "";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    background: url("./assets/circle.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+  }
+  .what-we-do p {
+    width: 80vw;
+    text-align: center;
+    line-height: 2em;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
 }
 /*# sourceMappingURL=what-we-do.css.map */
