@@ -1,33 +1,34 @@
-.what-we-do {
-    display: block;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    h1 {
-        font-size: 3.5em;
-        position: relative;
-        &::before {
-            content: "W";
-            font-family: "poppins", sans-serif;
-            font-size: 150px;
+@media only screen and (min-width: 600px) {
+    .what-we-do {
+        display: block;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+            font-size: 3.5em;
             position: relative;
-            color: #f2c610;
-            z-index: -100;
-            top: 0px;
-            left: 30px;
+            &::before {
+                content: "W";
+                font-family: "poppins", sans-serif;
+                font-size: 150px;
+                position: relative;
+                color: #f2c610;
+                z-index: -100;
+                top: 0px;
+                left: 30px;
+            }
         }
     }
 }
-
 @media only screen and (max-width: 599px) {
     .what-we-do {
         h1 {
-        width: 95vw;
-        margin: 0 auto;
-        margin-top: 125px;
-        display: flex;
-        flex-direction: column;
-        font-size: 2.5em;
+            width: 95vw;
+            margin: 0 auto;
+            margin-top: 125px;
+            display: flex;
+            flex-direction: column;
+            font-size: 2.5em;
             &::before {
                 content: "W";
                 color: #f2c610;

@@ -15,6 +15,7 @@ function checkTheme()  {
         img.src = "./assets/logo-white.png"
     }
 }
+
 // On click change theme color
 // Match black & white elements to theme
 function changeTheme()  {
