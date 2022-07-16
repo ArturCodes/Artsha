@@ -1,5 +1,5 @@
 //  DESKTOP NAV
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
     nav {
         display: flex;
         flex-direction: row;
@@ -39,8 +39,8 @@
         display: flex;
         justify-content: right;
         align-items: center;
-        margin: 0 25px;
-        width: 200px;
+        margin: 0 25px 0 0;
+        width: 175px;
         font-size: 16px;
         a {
             margin: 0 5px;
@@ -63,7 +63,7 @@
 //     MOBILE @ MEDIA SCREEN
 // -------------------------------
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1049px) {
     .white {
         background-color: white !important;
     }
@@ -95,6 +95,7 @@
         position: absolute;
         top: 55px;
         right: 30px;
+        width: auto;
         cursor: pointer;
         
         div {
@@ -103,7 +104,7 @@
             margin: 4px 0;
             background-color: black;
         }
-
+        
         div:nth-child(2) {
             width: 20px;
             margin-left: 4px;
@@ -151,6 +152,7 @@
         position: absolute;
         top: 25px;
         right: 3px;
+        padding: 35px;
         cursor: pointer;
         div {
             height: 3px;

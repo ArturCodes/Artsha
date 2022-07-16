@@ -54,7 +54,22 @@
 .v10 {left: 89.2%;}
 .v11 {left: 98%;}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+    .v0 {left: 5%}
+    .v1 {left: 15%}
+    .v2 {left: 25%}
+    .v3 {left: 35%}
+    .v4 {left: 45%}
+    .v5 {left: 55%;}
+    .v6 {left: 65%;}
+    .v7 {left: 75%;}
+    .v8 {left: 85%;}
+    .v9 {left: 95%;}
+    .v10 {display: none;}
+    .v11 {display: none;}
+}
+
+@media only screen and (max-width: 900px) {
     .v0 {left: 5%}
     .v1 {left: 20%}
     .v2 {left: 35%}
@@ -72,10 +87,10 @@
 @media only screen and (max-width: 600px) { 
     
     .v0 {left: 5%}
-    .v1 {left: 35%}
-    .v2 {left: 65%}
-    .v3 {left: 95%}
-    .v4 {display: none;}
+    .v1 {left: 27.5%}
+    .v2 {left: 50%}
+    .v3 {left: 72.5%}
+    .v4 {left: 95%}
     .v5 {display: none;}
     .v6 {display: none;}
     .v7 {display: none;}

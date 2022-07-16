@@ -23,7 +23,7 @@ html, body {
 
     //dark theme
     --bg-dark: rgb(27, 27, 27);
-    --lines-dark: #353535b2;
+    --lines-dark: #414141d1;
 
     --text-dark: #d6d6d6;
     --highlight-dark: #F2C610;
@@ -39,16 +39,18 @@ html, body {
         color: var(--text-light);
     }
     .secondary-font-color {
-        color: black !important;
+        background-color: black !important;
     } 
     .font-color  {
         color: black;
     }
     .line-v {
         border-right: 1px solid var(--lines-light);
+        z-index: -999;
     }
     .line-h {
         border-top: 1px solid var(--lines-light);
+        z-index: -999;
     }
      
 }
@@ -61,6 +63,9 @@ html, body {
         color: var(--text-dark);
     }
     .secondary-font-color {
+        color: black;
+    }
+    .font-color {
         color: black;
     }
      
