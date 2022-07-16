@@ -5,7 +5,7 @@
         margin: 100px auto;
         display: flex;
         flex-direction: row;
-
+        height: 500px;
     }
     .landing-left {
         h1 {
@@ -57,13 +57,13 @@
             background-color: #f2c610;
             border-radius: 25px;
             font-weight: 600;
-            border-color: white;
-            border-style: ridge;
+            border-color: goldenrod;
+            border-style: solid;    
             cursor: pointer;
             &:hover {
-                border-color: white;
+                border-color: goldenrod;
                 border-style: solid;
-                border-width: 3px;
+                border-width: 5px;
             }
         }
     }
@@ -78,7 +78,6 @@
     .landing {
         width: 60%;
         margin: 100px auto;
-        
     }
     .landing-left {
         position: relative;
@@ -117,7 +116,6 @@
                 top: -93px;
                 left: -185px;
             }
-
         }
         p {
             width: 500px;
@@ -136,13 +134,13 @@
             font-weight: 600;
             background-color: #f2c610;
             border-radius: 25px;
-            border-color: white;
-            border-style: ridge;
+            border-color: goldenrod;
+            border-style: solid;
             cursor: pointer;
             &:hover {
-                border-color: white;
+                border-color: goldenrod;
                 border-style: solid;
-                border-width: 3px;
+                border-width: 5px;
             }
         }
     }
@@ -201,7 +199,6 @@
                 top: -93px;
                 left: -200px;
             }
-    
         }
         p {
             width: 500px;
@@ -220,13 +217,13 @@
             background-color: #f2c610;
             font-weight: 600;
             border-radius: 25px;
-            border-color: white;
-            border-style: ridge;
+            border-color: goldenrod;
+            border-style: solid;
             cursor: pointer;
             &:hover {
-                border-color: white;
+                border-color: goldenrod;
                 border-style: solid;
-                border-width: 3px;
+                border-width: 5px;
             }
         }
     }
@@ -242,7 +239,7 @@
     }
 }
 
-@media only screen and (max-width: 599px)   {
+@media only screen and (max-width: 599px) {
     .landing {
         width: 75vw;
         margin: 100px auto;
@@ -304,13 +301,13 @@
             border-radius: 25px;
             font-weight: 600;
             text-align: center;
-            border-color: white;
-            border-style: ridge;
+            border-color: goldenrod;
+            border-style: solid;
             cursor: pointer;
             &:hover {
-                border-color: white;
+                border-color: goldenrod;
                 border-style: solid;
-                border-width: 3px;
+                border-width: 5px;
             }
         }
     }
@@ -324,5 +321,3 @@
         }
     }
 }
-
- 
