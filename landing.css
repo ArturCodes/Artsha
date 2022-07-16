@@ -60,16 +60,18 @@
     top: -310px;
     margin-top: 35px;
     width: 125px;
-    height: 35px;
+    height: 40px;
     text-align: center;
     background-color: #f2c610;
     border-radius: 25px;
+    border: none;
     border-color: white;
     font-weight: 600;
     cursor: pointer;
   }
   .landing .landing-left button:hover {
-    border-color: orange;
+    border-color: white;
+    border: solid;
   }
   .landing .landing-right {
     position: relative;
@@ -84,17 +86,17 @@
     width: 60%;
     margin: 100px auto;
   }
-  .landing-left {
+  .landing .landing-left {
     position: relative;
     margin: 0 auto;
     width: 100%;
     overflow-x: visible;
   }
-  .landing-left h1 {
+  .landing .landing-left h1 {
     font-size: 3.5em;
     line-height: 1.3em;
   }
-  .landing-left h1::before {
+  .landing .landing-left h1::before {
     content: "S";
     color: #f2c610;
     -webkit-user-select: none;
@@ -109,7 +111,7 @@
     top: 0px;
     left: -85px;
   }
-  .landing-left span::after {
+  .landing .landing-left span::after {
     content: "";
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -127,19 +129,19 @@
     top: -93px;
     left: -200px;
   }
-  .landing-left p {
+  .landing .landing-left p {
     width: 500px;
     margin-top: 25px;
     font-size: 1.2em;
     line-height: 1.8em;
     position: relative;
   }
-  .landing-left button {
+  .landing .landing-left button {
     position: relative;
     top: -10px;
     margin-top: 35px;
     width: 125px;
-    height: 35px;
+    height: 40px;
     text-align: center;
     background-color: #f2c610;
     border-radius: 25px;
@@ -147,14 +149,14 @@
     font-weight: 600;
     cursor: pointer;
   }
-  .landing-left button:hover {
+  .landing .landing-left button:hover {
     border-color: orange;
   }
-  .landing-right {
+  .landing .landing-right {
     margin-top: 25px;
     position: relative;
   }
-  .landing-right img {
+  .landing .landing-right img {
     width: 400px;
     position: relative;
     right: -80px;
@@ -162,13 +164,77 @@
   }
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 799px) and (min-width: 600px) {
   .landing {
-    width: 90%;
+    width: 80%;
+    margin: 100px auto;
+    padding-left: 50px;
   }
-  .landing img {
-    margin-top: 100px;
-    width: 25px;
+  .landing .landing-left {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: visible;
+  }
+  .landing .landing-left h1 {
+    font-size: 3.5em;
+    line-height: 1.3em;
+  }
+  .landing .landing-left h1::before {
+    content: "S";
+    color: #f2c610;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 175px;
+    font-weight: 900;
+    font-family: "poppins", sans-serif;
+    z-index: -100;
+    position: absolute;
+    top: 0px;
+    left: -85px;
+  }
+  .landing .landing-left span::after {
+    content: "";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    background: url("./assets/dots.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    z-index: -100;
+    top: -93px;
+    left: -200px;
+  }
+  .landing .landing-left p {
+    width: 500px;
+    margin-top: 25px;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    position: relative;
+  }
+  .landing .landing-left button {
+    position: relative;
+    top: -10px;
+    margin-top: 35px;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    background-color: #f2c610;
+    border-radius: 25px;
+    border-color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .landing .landing-left button:hover {
+    border-color: orange;
   }
 }
 /*# sourceMappingURL=landing.css.map */
