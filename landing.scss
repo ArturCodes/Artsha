@@ -56,13 +56,14 @@
             text-align: center;
             background-color: #f2c610;
             border-radius: 25px;
-            border: none;
-            border-color: white;
             font-weight: 600;
+            border-color: white;
+            border-style: ridge;
             cursor: pointer;
             &:hover {
                 border-color: white;
-                border: solid;
+                border-style: solid;
+                border-width: 3px;
             }
         }
     }
@@ -132,13 +133,16 @@
             width: 125px;
             height: 40px;
             text-align: center;
+            font-weight: 600;
             background-color: #f2c610;
             border-radius: 25px;
             border-color: white;
-            font-weight: 600;
+            border-style: ridge;
             cursor: pointer;
             &:hover {
-                border-color: orange;
+                border-color: white;
+                border-style: solid;
+                border-width: 3px;
             }
         }
     }
@@ -214,12 +218,15 @@
             height: 40px;
             text-align: center;
             background-color: #f2c610;
+            font-weight: 600;
             border-radius: 25px;
             border-color: white;
-            font-weight: 600;
+            border-style: ridge;
             cursor: pointer;
             &:hover {
-                border-color: orange;
+                border-color: white;
+                border-style: solid;
+                border-width: 3px;
             }
         }
     }
@@ -295,11 +302,15 @@
             text-align: center;
             background-color: #f2c610;
             border-radius: 25px;
-            border-color: white;
             font-weight: 600;
+            text-align: center;
+            border-color: white;
+            border-style: ridge;
             cursor: pointer;
             &:hover {
-                border-color: orange;
+                border-color: white;
+                border-style: solid;
+                border-width: 3px;
             }
         }
     }
