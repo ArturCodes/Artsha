@@ -4,12 +4,13 @@
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    margin-top: -50px;
   }
   .what-we-do-main h1 {
     font-size: 3.5em;
     position: relative;
     left: -75px;
-    top: 20px;
+    top: 35px;
   }
   .what-we-do-main h1::before {
     content: "W";
@@ -40,19 +41,18 @@
             user-select: none;
     pointer-events: none;
     background: url("./assets/circle.png");
-    background-size: 700px 700px;
+    background-size: 600px 600px;
     background-repeat: no-repeat;
     display: block;
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
     z-index: 999;
     position: relative;
-    top: -495px;
-    left: -100px;
+    top: -450px;
+    left: -50px;
   }
   .what-we-do-services {
     max-width: 900px;
-    margin-top: 150px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -61,10 +61,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 450px;
+    height: 600px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: center;
+  }
+  .what-we-do-services div {
+    margin-top: 50px;
   }
   .what-we-do-services div h1 {
     font-size: 1.5em;
@@ -76,6 +80,7 @@
   .what-we-do-services div p {
     font-size: 1em;
     line-height: 1.8em;
+    padding: 0px 20px;
   }
   .what-we-do-services .mobile {
     -ms-flex-item-align: start;
@@ -86,6 +91,7 @@
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
+    z-index: -100;
   }
   .what-we-do-services .responsive {
     -ms-flex-item-align: center;
