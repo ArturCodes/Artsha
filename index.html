@@ -11,10 +11,13 @@
     <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="lines.css" />
     <link rel="stylesheet" href="root.css" />
@@ -50,7 +53,6 @@
       <div class="line-h h18"></div>
       <div class="line-h h19"></div>
       <div class="line-h h20"></div>
- 
     </div>
     <div aria-hidden="true" class="verticle-lines-wrapper">
       <div class="line-v v0"></div>
@@ -73,7 +75,13 @@
         <!-- ------DESKTOP NAV------- -->
         <div class="logo">
           <a href="/">
-            <img id="logo" src="./assets/Logo.png" width="200px" height="75px" alt="Logo" />
+            <img
+              id="logo"
+              src="./assets/Logo.png"
+              width="200px"
+              height="75px"
+              alt="Logo"
+            />
           </a>
         </div>
 
@@ -87,10 +95,16 @@
 
         <div class="switcher">
           <div class="language-switch">
-            <a href="/index.html">ENG</a> 
-            | 
-            <a href="/index_ru.html">RU</a></div>
-          <img id="theme" src="./assets/theme.png" onclick="changeTheme()" alt="theme-changer" />
+            <a href="/index.html">ENG</a>
+            |
+            <a href="/index_ru.html">RU</a>
+          </div>
+          <img
+            id="theme"
+            src="./assets/theme.png"
+            onclick="changeTheme()"
+            alt="theme-changer"
+          />
         </div>
 
         <!-- appears when width less than 750px -->
@@ -103,7 +117,6 @@
         <!-- ------MOBILE NAV ------ -->
         <div id="opacity-bg" class="closeNav" onclick="closeNav()"></div>
         <div id="mobile-nav" class="closeNav">
-
           <div>
             <!--------MOBILE LINKS----------->
             <div class="mobile-links">
@@ -115,43 +128,93 @@
             </div>
             <!---------MOBILE SWITCHER----------->
             <div class="mobile-bottom">
-              <img 
-                src="./assets/theme-white.png" 
+              <img
+                src="./assets/theme-white.png"
                 alt="theme"
-                onclick="changeTheme()" />
-              <div class="white-c"><a href="/">ENG</a> <span class="white-c">|</span> <a href="/index_rus.html">RUS</a></div>
+                onclick="changeTheme()"
+              />
+              <div class="white-c">
+                <a href="/">ENG</a> <span class="white-c">|</span>
+                <a href="/index_rus.html">RUS</a>
+              </div>
 
               <div class="mobile-x-button" onclick="closeNav()">
                 <div></div>
                 <div></div>
               </div>
-
             </div>
           </div>
-          
         </div>
       </nav>
-      
+
       <!-- ------LANDING------ -->
       <section class="landing">
         <div class="landing-left">
-          <h1>Small Buisness Web <br> Design + <br> Development </h1>
+          <h1>
+            Small Buisness Web <br />
+            Design + <br />
+            Development
+          </h1>
           <span></span>
-          <p>We custom build websites, line by line 100% hand-coded. No page builders or WordPress. Ensuring best performance and google ranking, starting at $150/mo.</p>
+          <p>
+            We custom build websites, line by line 100% hand-coded. No page
+            builders or WordPress. Ensuring best performance and google ranking,
+            starting at $150/mo.
+          </p>
 
-          <button><a href="/contant.html" class="font-color"> Get in touch!</a></button>
+          <button>
+            <a href="/contant.html" class="font-color"> Get in touch!</a>
+          </button>
         </div>
         <div class="landing-right">
-          <img src="./assets/mobile.png" aria-hidden="true" alt="responsive-mobile">
+          <img
+            src="./assets/mobile.png"
+            aria-hidden="true"
+            alt="responsive-mobile"
+          />
         </div>
       </section>
     </header>
-        
+
     <main>
       <!-- ------WHAT WE DO------ -->
       <section class="what-we-do">
+
+        <div class="what-we-do-main">
+        </div>
         <h1>What we do</h1>
-        <p>We specialize in small business web design and development for clients anywhere in the US. Every line of code is written by hand to ensure the best performance and google ranking, which helps bring in more customers to your site and bring more revenue to your business. <a href="/services.html"><span>LEARN MORE</span></a></p>
+        <p>
+          We specialize in small business web design and development for clients
+          anywhere in the US. Every line of code is written by hand to ensure
+          the best performance and google ranking, which helps bring in more
+          customers to your site and bring more revenue to your business.
+          <a href="/services.html"><span>LEARN MORE</span></a>
+        </p>
+      </div>
+
+      </section>
+      <section class="services">
+        <div class="mobile">
+          <h1><span>M</span>obile First Design</h1>
+          <p>
+            We start building your site for mobile devices first, then we add on
+            to it to make tablet and desktop.
+          </p>
+        </div>
+        <div class="responsive">
+          <h1><span>F</span>ully Responsive Design</h1>
+          <p>
+            Your website will fit all mobile screens sizes, tablets, and desktop
+            sizes so new clients can access your site from anywhere.
+          </p>
+        </div>
+        <div class="optimization">
+          <h1><span>O</span>ptimization</h1>
+          <p>
+            60% of all internet traffic is on mobile devices, so we optimize
+            your mobile to perform their best in search engines.
+          </p>
+        </div>
       </section>
     </main>
   </body>
