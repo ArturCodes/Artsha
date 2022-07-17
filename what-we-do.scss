@@ -56,8 +56,25 @@
         height: 600px;
         justify-content: space-between;
         text-align: center;
+        margin-top: 30px;
+        position: relative;
+        &::after {
+            content: "";
+            user-select: none;
+            pointer-events: none;
+            background: url("./assets/responsive.png");
+            background-size: 500px 225px;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            z-index: -100;
+            top: 375px;
+            left: -60px;
+        }
         div {
-            margin-top: 50px;
+            height: 200px;
             h1 {
                 font-size: 1.5em;
                 span {
@@ -73,13 +90,6 @@
         }
         .mobile {
             align-self: flex-start;
-            &::after {
-                background: url('./assets/responsive.png');
-                background-size: 200px 200px;
-                width: 200px;
-                height: 200px;
-                z-index: -100;
-            }
         }
         .responsive {
             align-self: center;
@@ -143,5 +153,48 @@
         }
     }
     .what-we-do-services {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 75px;
+       
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 50px;
+            h1 {
+                font-size: 1.5em;
+                line-height: 1.5em;
+                span {
+                    font-size: 2em;
+                    color: #f2c610;
+                }
+            }
+            p {
+                width: 300px;
+                margin-top: 15px;
+                font-size: 1em;
+                line-height: 1.5em;
+                align-self: center;
+            }
+        }
+        .optimization {
+            &::after {
+                content: "";
+                user-select: none;
+                pointer-events: none;
+                background: url("./assets/responsive.png");
+                background-size: 400px 180px;
+                background-repeat: no-repeat;
+                display: block;
+                position: relative;
+                width: 500px;
+                height: 500px;
+                z-index: -100;
+                top: 50px;
+                left: 0;
+            }
+        }
     }
 }

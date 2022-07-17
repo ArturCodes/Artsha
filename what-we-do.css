@@ -66,9 +66,29 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
+    margin-top: 30px;
+    position: relative;
+  }
+  .what-we-do-services::after {
+    content: "";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    background: url("./assets/responsive.png");
+    background-size: 500px 225px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: -100;
+    top: 375px;
+    left: -60px;
   }
   .what-we-do-services div {
-    margin-top: 50px;
+    height: 200px;
   }
   .what-we-do-services div h1 {
     font-size: 1.5em;
@@ -85,13 +105,6 @@
   .what-we-do-services .mobile {
     -ms-flex-item-align: start;
         align-self: flex-start;
-  }
-  .what-we-do-services .mobile::after {
-    background: url("./assets/responsive.png");
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
-    z-index: -100;
   }
   .what-we-do-services .responsive {
     -ms-flex-item-align: center;
@@ -166,6 +179,60 @@
   .what-we-do-main p span {
     color: #f2c610;
     overflow-wrap: normal;
+  }
+  .what-we-do-services {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 75px;
+  }
+  .what-we-do-services div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .what-we-do-services div h1 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .what-we-do-services div h1 span {
+    font-size: 2em;
+    color: #f2c610;
+  }
+  .what-we-do-services div p {
+    width: 300px;
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .what-we-do-services .optimization::after {
+    content: "";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    background: url("./assets/responsive.png");
+    background-size: 400px 180px;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    z-index: -100;
+    top: 50px;
+    left: 0;
   }
 }
 /*# sourceMappingURL=what-we-do.css.map */
