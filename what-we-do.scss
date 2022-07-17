@@ -18,6 +18,23 @@
                 left: 30px;
             }
         }
+        p {
+            max-width: 900px;
+            &::before {
+                content: "";
+                user-select: none;
+                pointer-events: none;
+                background: url("./assets/circle.svg");
+                background-size: 300px 300px;
+                background-repeat: no-repeat;
+                display: block;
+                height: 300px;
+                width: 300px;
+                z-index: 999;
+                top: 0px;
+                left: 0px;
+            }
+        }
     }
 }
 @media only screen and (max-width: 599px) {
