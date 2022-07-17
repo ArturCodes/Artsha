@@ -1,17 +1,17 @@
 @media only screen and (min-width: 600px) {
-  .what-we-do {
+  .what-we-do-main {
     display: block;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
   }
-  .what-we-do h1 {
+  .what-we-do-main h1 {
     font-size: 3.5em;
     position: relative;
     left: -75px;
     top: 20px;
   }
-  .what-we-do h1::before {
+  .what-we-do-main h1::before {
     content: "W";
     font-family: "poppins", sans-serif;
     font-size: 150px;
@@ -21,7 +21,7 @@
     top: 0px;
     left: 30px;
   }
-  .what-we-do p {
+  .what-we-do-main p {
     text-align: center;
     margin: 0 auto;
     max-width: 500px;
@@ -29,10 +29,10 @@
     font-size: 1.2em;
     line-height: 1.8em;
   }
-  .what-we-do p span {
+  .what-we-do-main p span {
     color: #f2c610;
   }
-  .what-we-do p::after {
+  .what-we-do-main p::after {
     content: "";
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -50,13 +50,59 @@
     top: -495px;
     left: -100px;
   }
+  .what-we-do-services {
+    max-width: 900px;
+    margin-top: 150px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 450px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .what-we-do-services div h1 {
+    font-size: 1.5em;
+  }
+  .what-we-do-services div h1 span {
+    font-size: 3em;
+    color: #f2c610;
+  }
+  .what-we-do-services div p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+  .what-we-do-services .mobile {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .what-we-do-services .mobile::after {
+    background: url("./assets/responsive.png");
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+  }
+  .what-we-do-services .responsive {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .what-we-do-services .optimization {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 @media only screen and (max-width: 599px) {
-  .what-we-do {
+  .what-we-do-main {
     margin-top: -50px;
   }
-  .what-we-do h1 {
+  .what-we-do-main h1 {
     width: 95vw;
     margin: 0 auto;
     display: -webkit-box;
@@ -69,7 +115,7 @@
     font-size: 2.5em;
     text-align: center;
   }
-  .what-we-do h1::before {
+  .what-we-do-main h1::before {
     content: "W";
     color: #f2c610;
     -webkit-user-select: none;
@@ -84,7 +130,7 @@
     top: 50px;
     left: -110px;
   }
-  .what-we-do h1::after {
+  .what-we-do-main h1::after {
     content: "";
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -103,7 +149,7 @@
     z-index: -100;
     top: -150px;
   }
-  .what-we-do p {
+  .what-we-do-main p {
     width: 80vw;
     text-align: center;
     line-height: 2em;
@@ -111,7 +157,7 @@
     margin-top: -275px;
     position: relative;
   }
-  .what-we-do p span {
+  .what-we-do-main p span {
     color: #f2c610;
     overflow-wrap: normal;
   }

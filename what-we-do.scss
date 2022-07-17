@@ -1,5 +1,5 @@
 @media only screen and (min-width: 600px) {
-    .what-we-do {
+    .what-we-do-main {
         display: block;
         max-width: 900px;
         margin: 0 auto;
@@ -28,7 +28,7 @@
             font-size: 1.2em;
             line-height: 1.8em;
             span {
-                color: #f2c610; 
+                color: #f2c610;
             }
             &::after {
                 content: "";
@@ -47,9 +47,46 @@
             }
         }
     }
+    .what-we-do-services {
+        max-width: 900px;
+        margin-top: 150px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        justify-content: space-between;
+        div {
+            h1 {
+                font-size: 1.5em;
+                span {
+                    font-size: 3em;
+                    color: #f2c610;
+                }
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.8em;
+            }
+        }
+        .mobile {
+            align-self: flex-start;
+            &::after {
+                background: url('./assets/responsive.png');
+                background-size: 200px 200px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .responsive {
+            align-self: center;
+        }
+        .optimization {
+            align-self: flex-end;
+        }
+    }
 }
 @media only screen and (max-width: 599px) {
-    .what-we-do {
+    .what-we-do-main {
         margin-top: -50px;
         h1 {
             width: 95vw;
@@ -87,8 +124,7 @@
                 top: -150px;
             }
         }
-         
-        
+
         p {
             width: 80vw;
             text-align: center;
@@ -97,9 +133,11 @@
             margin-top: -275px;
             position: relative;
             span {
-                color: #f2c610; 
+                color: #f2c610;
                 overflow-wrap: normal;
             }
         }
+    }
+    .what-we-do-services {
     }
 }
