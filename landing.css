@@ -320,14 +320,14 @@
   .landing-left button {
     position: relative;
     top: -10px;
+    margin: 0 auto;
     margin-top: 35px;
     width: 125px;
     height: 40px;
-    text-align: center;
+    text-align: center !important;
     background-color: #f2c610;
     border-radius: 25px;
     font-weight: 600;
-    text-align: center;
     border-color: goldenrod;
     border-style: solid;
     cursor: pointer;

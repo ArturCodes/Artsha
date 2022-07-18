@@ -22,15 +22,6 @@
             }
         }
         p {
-            text-align: center;
-            margin: 0 auto;
-            max-width: 500px;
-            height: 200px;
-            font-size: 1.2em;
-            line-height: 1.8em;
-            span {
-                color: #f2c610;
-            }
             &::after {
                 content: "";
                 user-select: none;
@@ -39,12 +30,21 @@
                 background-size: 600px 600px;
                 background-repeat: no-repeat;
                 display: block;
-                height: 600px;
                 width: 600px;
+                height: 600px;
                 z-index: 999;
                 position: relative;
                 top: -450px;
                 left: -50px;
+            }
+            text-align: center;
+            margin: 0 auto;
+            max-width: 500px;
+            height: 200px;
+            font-size: 1.2em;
+            line-height: 1.8em;
+            span {
+                color: #f2c610;
             }
         }
     }
@@ -83,9 +83,30 @@
             align-self: flex-end;
         }
     }
-    .what-we-do img {
-        max-width: 500px;
-        height
+    .what-we-do {
+        max-width: 900px;
+        margin: 0 auto;
+        img {
+            max-width: 550px;
+            position: relative;
+            top: -200px;
+            left: -125px;
+        }
+    }
+}
+@media only screen and (max-width: 1150px) and (min-width: 800px) {
+    .what-we-do {
+        max-width: 900px;
+        margin: 0 auto;
+        img {
+            z-index: -100;
+            user-select: none;
+            width: auto;
+            margin: 0 auto;
+            margin-top: 50px;
+            position: relative;
+            left: 0;
+        }
     }
 }
 @media only screen and (max-width: 799px) {
@@ -127,7 +148,6 @@
                 top: -150px;
             }
         }
-
         p {
             width: 80vw;
             text-align: center;
@@ -146,7 +166,7 @@
         margin: 0 auto;
         text-align: center;
         margin-top: 75px;
-        
+
         div {
             display: flex;
             flex-direction: column;
@@ -173,9 +193,14 @@
         }
     }
     .what-we-do {
-
         img {
-            max-width: 300px;
+            z-index: -100;
+            user-select: none;
+            margin-top: 75px;
+            position: relative;
+            width: 75vw;
+            height: auto;
+            left: 12%;
         }
     }
 }

@@ -30,9 +30,6 @@
     font-size: 1.2em;
     line-height: 1.8em;
   }
-  .what-we-do-main p span {
-    color: #f2c610;
-  }
   .what-we-do-main p::after {
     content: "";
     -webkit-user-select: none;
@@ -44,12 +41,15 @@
     background-size: 600px 600px;
     background-repeat: no-repeat;
     display: block;
-    height: 600px;
     width: 600px;
+    height: 600px;
     z-index: 999;
     position: relative;
     top: -450px;
     left: -50px;
+  }
+  .what-we-do-main p span {
+    color: #f2c610;
   }
   .what-we-do-services {
     max-width: 900px;
@@ -97,8 +97,34 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  img {
-    max-width: 500px;
+  .what-we-do {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .what-we-do img {
+    max-width: 550px;
+    position: relative;
+    top: -200px;
+    left: -125px;
+  }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 800px) {
+  .what-we-do {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .what-we-do img {
+    z-index: -100;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    left: 0;
   }
 }
 
@@ -204,8 +230,17 @@
   .what-we-do-services .optimization {
     position: relative;
   }
-  img {
-    max-width: 300px;
+  .what-we-do img {
+    z-index: -100;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin-top: 75px;
+    position: relative;
+    width: 75vw;
+    height: auto;
+    left: 12%;
   }
 }
 /*# sourceMappingURL=what-we-do.css.map */
