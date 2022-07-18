@@ -58,21 +58,6 @@
         text-align: center;
         margin-top: 30px;
         position: relative;
-        &::after {
-            content: "";
-            user-select: none;
-            pointer-events: none;
-            background: url("./assets/responsive.png");
-            background-size: 500px 225px;
-            background-repeat: no-repeat;
-            display: block;
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            z-index: -100;
-            top: 425px;
-            left: 10px;
-        }
         div {
             height: 200px;
             h1 {
@@ -97,6 +82,10 @@
         .optimization {
             align-self: flex-end;
         }
+    }
+    .what-we-do img {
+        max-width: 500px;
+        height
     }
 }
 @media only screen and (max-width: 799px) {
@@ -157,22 +146,7 @@
         margin: 0 auto;
         text-align: center;
         margin-top: 75px;
-        &::after {
-            content: "";
-            user-select: none;
-            pointer-events: none;
-            background: url("./assets/responsive.png");
-            background-size: 400px 180px;
-            background-repeat: no-repeat;
-            display: block;
-            position: relative;
-            margin: auto;
-            min-width: 700px;
-            min-height: 700px;
-            z-index: -100;
-            top: 50px;
-            left: 0;
-        }
+        
         div {
             display: flex;
             flex-direction: column;
@@ -196,6 +170,12 @@
         }
         .optimization {
             position: relative;
+        }
+    }
+    .what-we-do {
+
+        img {
+            max-width: 300px;
         }
     }
 }
