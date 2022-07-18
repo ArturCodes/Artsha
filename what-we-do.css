@@ -1,10 +1,10 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .what-we-do-main {
     display: block;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -100px;
   }
   .what-we-do-main h1 {
     font-size: 3.5em;
@@ -84,8 +84,8 @@
     width: 500px;
     height: 500px;
     z-index: -100;
-    top: 375px;
-    left: -60px;
+    top: 425px;
+    left: 10px;
   }
   .what-we-do-services div {
     height: 200px;
@@ -117,7 +117,7 @@
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 799px) {
   .what-we-do-main {
     margin-top: -50px;
   }
@@ -181,10 +181,29 @@
     overflow-wrap: normal;
   }
   .what-we-do-services {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     margin-top: 75px;
+  }
+  .what-we-do-services::after {
+    content: "";
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none;
+    background: url("./assets/responsive.png");
+    background-size: 400px 180px;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    margin: auto;
+    min-width: 700px;
+    min-height: 700px;
+    z-index: -100;
+    top: 50px;
+    left: 0;
   }
   .what-we-do-services div {
     display: -webkit-box;
@@ -216,23 +235,8 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .what-we-do-services .optimization::after {
-    content: "";
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    background: url("./assets/responsive.png");
-    background-size: 400px 180px;
-    background-repeat: no-repeat;
-    display: block;
+  .what-we-do-services .optimization {
     position: relative;
-    width: 500px;
-    height: 500px;
-    z-index: -100;
-    top: 50px;
-    left: 0;
   }
 }
 /*# sourceMappingURL=what-we-do.css.map */

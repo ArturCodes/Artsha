@@ -13,7 +13,6 @@
 
 .line-h {
   position: absolute;
-  border-top: 1px #d0e7fd solid;
   width: 100%;
   z-index: -999;
 }
@@ -104,6 +103,46 @@
 
 .h21 {
   top: 2120px;
+}
+
+.h22 {
+  top: 2220px;
+}
+
+.h23 {
+  top: 2320px;
+}
+
+.h24 {
+  top: 2420px;
+}
+
+.h25 {
+  top: 2520px;
+}
+
+.h26 {
+  top: 2620px;
+}
+
+.h27 {
+  top: 2720px;
+}
+
+.h28 {
+  top: 2820px;
+}
+
+.h29 {
+  top: 2920px;
+}
+
+.h30 {
+  top: 3020px;
+}
+
+.h31 {
+  top: 3120px;
 }
 
 .line-v {
