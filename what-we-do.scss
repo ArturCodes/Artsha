@@ -83,7 +83,7 @@
             align-self: flex-end;
         }
     }
-    #what-we-do {
+    #what-we-do-section {
         max-width: 900px;
         margin: 0 auto;
         img {
@@ -95,7 +95,7 @@
     }
 }
 @media only screen and (max-width: 1150px) and (min-width: 800px) {
-    #what-we-do {
+    #what-we-do-section {
         max-width: 900px;
         margin: 0 auto;
         img {
@@ -192,7 +192,7 @@
             position: relative;
         }
     }
-    #what-we-do {
+    #what-we-do-section {
         img {
             z-index: -100;
             user-select: none;

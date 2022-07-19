@@ -97,11 +97,11 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  #what-we-do {
+  #what-we-do-section {
     max-width: 900px;
     margin: 0 auto;
   }
-  #what-we-do img {
+  #what-we-do-section img {
     max-width: 550px;
     position: relative;
     top: -205px;
@@ -110,11 +110,11 @@
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 800px) {
-  #what-we-do {
+  #what-we-do-section {
     max-width: 900px;
     margin: 0 auto;
   }
-  #what-we-do img {
+  #what-we-do-section img {
     z-index: -100;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -230,7 +230,7 @@
   .what-we-do-services .optimization {
     position: relative;
   }
-  #what-we-do img {
+  #what-we-do-section img {
     z-index: -100;
     -webkit-user-select: none;
        -moz-user-select: none;
