@@ -1,10 +1,19 @@
 @media only screen and (min-width: 800px) {
-    .what-we-do-main {
+    #what-we-do-section {
+        max-width: 900px;
+        margin: 0 auto;
+        img {
+            max-width: 550px;
+            position: relative;
+            top: -225px;
+            left: -125px;
+        }
+    }.what-we-do-main {
         display: block;
         max-width: 900px;
         margin: 0 auto;
         text-align: center;
-        margin-top: -100px;
+        margin-top: -50px;
         h1 {
             font-size: 3.5em;
             position: relative;
@@ -83,16 +92,7 @@
             align-self: flex-end;
         }
     }
-    #what-we-do-section {
-        max-width: 900px;
-        margin: 0 auto;
-        img {
-            max-width: 550px;
-            position: relative;
-            top: -225px;
-            left: -125px;
-        }
-    }
+    
 }
 @media only screen and (max-width: 1150px) and (min-width: 800px) {
     #what-we-do-section {
@@ -110,6 +110,17 @@
     }
 }
 @media only screen and (max-width: 799px) {
+    #what-we-do-section {
+        img {
+            z-index: -100;
+            user-select: none;
+            margin-top: 75px;
+            position: relative;
+            width: 75vw;
+            height: auto;
+            left: 12%;
+        }
+    }
     .what-we-do-main {
         margin-top: -50px;
         h1 {
@@ -192,15 +203,5 @@
             position: relative;
         }
     }
-    #what-we-do-section {
-        img {
-            z-index: -100;
-            user-select: none;
-            margin-top: 75px;
-            position: relative;
-            width: 75vw;
-            height: auto;
-            left: 12%;
-        }
-    }
+    
 }

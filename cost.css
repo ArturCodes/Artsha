@@ -39,15 +39,15 @@
           flex-direction: row;
 }
 
-.cost {
+.cost-details .cost {
   padding: 0 50px;
 }
 
-.cost div {
+.cost-details .cost div {
   margin-bottom: 25px;
 }
 
-.cost div::before {
+.cost-details .cost div::before {
   content: "";
   background: url("./assets/check.png");
   display: block;
@@ -59,7 +59,7 @@
   left: -30px;
 }
 
-.cost div p {
+.cost-details .cost div p {
   margin-top: 10px;
 }
 
