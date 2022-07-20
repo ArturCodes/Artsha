@@ -3,12 +3,13 @@
         max-width: 900px;
         margin: 0 auto;
         img {
-            max-width: 550px;
+            width: 75%;
             position: relative;
-            top: -225px;
+            top: -135px;
             left: -125px;
         }
-    }.what-we-do-main {
+    }
+    .what-we-do-main {
         display: block;
         max-width: 900px;
         margin: 0 auto;
@@ -62,9 +63,9 @@
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        height: 600px;
+        height: 450px;
         justify-content: space-between;
-        text-align: center;
+        // text-align: center;
         margin-top: 50px;
         position: relative;
         div {
@@ -92,7 +93,6 @@
             align-self: flex-end;
         }
     }
-    
 }
 @media only screen and (max-width: 1150px) and (min-width: 800px) {
     #what-we-do-section {
@@ -103,7 +103,7 @@
             user-select: none;
             position: relative;
             left: 0;
-            width: auto;
+            width: 70%;
             margin: 0 auto;
             margin-top: 50px;
         }
@@ -203,5 +203,4 @@
             position: relative;
         }
     }
-    
 }

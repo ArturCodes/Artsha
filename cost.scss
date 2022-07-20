@@ -28,30 +28,73 @@
     display: flex;
     flex-direction: row;
     .cost {
-    padding: 0 50px;
+        padding: 0 50px;
         div {
             margin-bottom: 25px;
-        
-        &::before {
+
+            &::before {
+                content: "";
+                background: url("./assets/check.png");
+                display: block;
+                background-size: 25px 25px;
+                height: 25px;
+                width: 25px;
+                position: relative;
+                top: 25px;
+                left: -30px;
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.cost-circles {
+    .cost-circle1 {
+        &::after {
             content: "";
-            background: url("./assets/check.png");
             display: block;
-            background-size: 25px 25px;
-            height: 25px;
-            width: 25px;
+            background: url("./assets/cost-circle1.png");
+            background-size: 400px 400px;
+            height: 400px;
+            width: 400px;
             position: relative;
-            top: 25px;
-            left: -30px;
         }
-        p {
-            margin-top: 10px;
+    }
+    .cost-circle2 {
+        &::after {
+            content: "";
+            display: block;
+            background: url("./assets/cost-circle2.png");
+            background-size: 400px 400px;
+            height: 400px;
+            width: 400px;
+            position: relative;
         }
-         
-    }   
+    }
+    .cost-circle3 {
+        &::after {
+            content: "";
+            display: block;
+            background: url("./assets/cost-circle3.png");
+            background-size: 400px 400px;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+    }
+    .cost-circle4 {
+        &::after {
+            content: "";
+            display: block;
+            background: url("./assets/cost-circle4.png");
+            background-size: 400px 400px;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+    }
 }
-}
-
-
 
 @media only screen and (max-width: 799px) {
     .cost-main {
