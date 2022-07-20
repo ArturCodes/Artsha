@@ -1,7 +1,6 @@
 .cost-main {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 100px;
 }
 
 .cost-main h1 {
@@ -44,6 +43,10 @@
   padding: 0 50px;
 }
 
+.cost div {
+  margin-bottom: 25px;
+}
+
 .cost div::before {
   content: "";
   background: url("./assets/check.png");
@@ -56,13 +59,19 @@
   left: -30px;
 }
 
+.cost div p {
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 799px) {
   .cost-main {
     max-width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
   }
   .cost-main h1 {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 2.5em;
     line-height: 1.3em;
   }
   .cost-main h1 span {
@@ -79,6 +88,26 @@
   }
   .cost-main p span {
     font-weight: 800;
+  }
+  .cost-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 25px;
+  }
+  .cost-details .cost div p {
+    max-width: 300px;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=cost.css.map */

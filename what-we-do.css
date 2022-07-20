@@ -104,7 +104,7 @@
   #what-we-do-section img {
     max-width: 550px;
     position: relative;
-    top: -205px;
+    top: -225px;
     left: -125px;
   }
 }
@@ -120,11 +120,11 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: relative;
+    left: 0;
     width: auto;
     margin: 0 auto;
     margin-top: 50px;
-    position: relative;
-    left: 0;
   }
 }
 
