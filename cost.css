@@ -1,106 +1,110 @@
-.cost-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.cost-main h1 {
-  text-align: center;
-  font-size: 3.5em;
-  line-height: 1.3em;
-}
-
-.cost-main h1 span {
-  color: #f2c610;
-}
-
-.cost-main p {
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 75px;
-  text-align: center;
-  font-size: 1.2em;
-  line-height: 1.8em;
-}
-
-.cost-main p span {
-  font-weight: 800;
-}
-
-.cost-details {
-  max-width: 900px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.cost-details .cost {
-  padding: 0 50px;
-}
-
-.cost-details .cost div {
-  margin-bottom: 25px;
-}
-
-.cost-details .cost div::before {
-  content: "";
-  background: url("./assets/check.png");
-  display: block;
-  background-size: 25px 25px;
-  height: 25px;
-  width: 25px;
-  position: relative;
-  top: 25px;
-  left: -30px;
-}
-
-.cost-details .cost div p {
-  margin-top: 10px;
-}
-
-.cost-circles .cost-circle1::after {
-  content: "";
-  display: block;
-  background: url("./assets/cost-circle1.png");
-  background-size: 400px 400px;
-  height: 400px;
-  width: 400px;
-  position: relative;
-}
-
-.cost-circles .cost-circle2::after {
-  content: "";
-  display: block;
-  background: url("./assets/cost-circle2.png");
-  background-size: 400px 400px;
-  height: 400px;
-  width: 400px;
-  position: relative;
-}
-
-.cost-circles .cost-circle3::after {
-  content: "";
-  display: block;
-  background: url("./assets/cost-circle3.png");
-  background-size: 400px 400px;
-  height: 400px;
-  width: 400px;
-  position: relative;
-}
-
-.cost-circles .cost-circle4::after {
-  content: "";
-  display: block;
-  background: url("./assets/cost-circle4.png");
-  background-size: 400px 400px;
-  height: 400px;
-  width: 400px;
-  position: relative;
+@media only screen and (min-width: 800px) {
+  .cost-main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .cost-main h1 {
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1.3em;
+    position: relative;
+  }
+  .cost-main h1 span {
+    color: #f2c610;
+  }
+  .cost-main h1::before {
+    content: "";
+    display: block;
+    background: url("./assets/cost-circle.png");
+    background-size: 400px 400px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: -175px;
+    top: -25px;
+    z-index: -100;
+  }
+  .cost-main h1::after {
+    content: "";
+    display: block;
+    background: url("./assets/cost-circle.png");
+    background-size: 250px 250px;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: -150px;
+    top: -150px;
+    z-index: -100;
+  }
+  .cost-main p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    position: relative;
+  }
+  .cost-main p span {
+    font-weight: 800;
+  }
+  .cost-main p::before {
+    content: "";
+    display: block;
+    background: url("./assets/cost-circle.png");
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: -150px;
+    top: 150px;
+    z-index: -100;
+  }
+  .cost-main p::after {
+    content: "";
+    display: block;
+    background: url("./assets/cost-circle.png");
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 250px;
+    top: 525px;
+    z-index: -100;
+  }
+  .cost-details {
+    max-width: 900px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cost-details .cost {
+    padding: 0 50px;
+  }
+  .cost-details .cost div {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .cost-details .cost div::before {
+    content: "";
+    background: url("./assets/check.png");
+    display: block;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 25px;
+    left: -30px;
+  }
+  .cost-details .cost div p {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 799px) {
@@ -113,9 +117,34 @@
     text-align: center;
     font-size: 2.5em;
     line-height: 1.3em;
+    position: relative;
   }
   .cost-main h1 span {
     color: #f2c610;
+  }
+  .cost-main h1::before {
+    content: "";
+    display: block;
+    background: url("./assets/cost-circle.png");
+    background-size: 400px 400px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: -175px;
+    top: -25px;
+    z-index: -100;
+  }
+  .cost-main h1::after {
+    content: "";
+    display: block;
+    background: url("./assets/cost-circle.png");
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 1000px;
+    z-index: -100;
   }
   .cost-main p {
     max-width: 800px;
@@ -125,11 +154,13 @@
     text-align: center;
     font-size: 1.2em;
     line-height: 1.8em;
+    position: relative;
   }
   .cost-main p span {
     font-weight: 800;
   }
   .cost-details {
+    max-width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,11 +174,25 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 25px;
+    margin-left: 50px;
   }
   .cost-details .cost div p {
     max-width: 300px;
     margin-top: 10px;
+  }
+  .cost-details .cost div {
+    margin-bottom: 25px;
+  }
+  .cost-details .cost div::before {
+    content: "";
+    background: url("./assets/check.png");
+    display: block;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 25px;
+    left: -30px;
   }
 }
 /*# sourceMappingURL=cost.css.map */
