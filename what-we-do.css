@@ -39,6 +39,15 @@
     height: 200px;
     font-size: 1.2em;
     line-height: 1.8em;
+    margin-top: 25px;
+  }
+  .what-we-do-main p a {
+    color: #f2c610;
+    white-space: nowrap;
+  }
+  .what-we-do-main p a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
   .what-we-do-main p::after {
     content: "";
@@ -57,9 +66,6 @@
     position: relative;
     top: -450px;
     left: -50px;
-  }
-  .what-we-do-main p span {
-    color: #f2c610;
   }
   .what-we-do-services {
     max-width: 900px;
@@ -169,7 +175,7 @@
     z-index: -100;
     position: relative;
     top: 50px;
-    left: -110px;
+    left: -107px;
   }
   .what-we-do-main h1::after {
     content: "";
@@ -193,14 +199,19 @@
   .what-we-do-main p {
     width: 80vw;
     text-align: center;
-    line-height: 2em;
+    font-size: 1.2em;
+    line-height: 1.8em;
     margin: 0 auto;
     margin-top: -275px;
     position: relative;
   }
-  .what-we-do-main p span {
+  .what-we-do-main p a {
     color: #f2c610;
-    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+  .what-we-do-main p a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
   .what-we-do-services {
     width: 90%;

@@ -10,25 +10,28 @@ Large - over 1301px
 # color
  color: #f2c610; 
 
+# font
+font-family: "poppins", sans-serif;
+
 
 DESKTOP
 ------------------
 
 # h1 
- font-size: 3em
+ font-size: 3em;
  line-height: 1.3em;
 
 # p  
-font-size: 1.2em
+font-size: 1.2em;
  line-height: 1.8em;
 
 MOBILE
 ------------------
 
 # h1 
- font-size: 2.5em
+ font-size: 2.5em;
  line-height: 1.3em;
 
 # p  
-font-size: 1.2em
+font-size: 1.2em;
  line-height: 1.8em;
