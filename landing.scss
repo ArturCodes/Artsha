@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1050px) {
-    .landing {
+    #landing-section {
         max-width: 900px;
         margin: 100px auto;
         display: flex;
@@ -34,7 +34,7 @@
                 content: "";
                 user-select: none;
                 pointer-events: none;
-                background: url("./assets/dots.png");
+                background: url("./assets/dotted-circle.png");
                 background-size: 300px 300px;
                 background-repeat: no-repeat;
                 display: block;
@@ -42,7 +42,7 @@
                 height: 300px;
                 width: 300px;
                 z-index: -100;
-                top: -440px;
+                top: -455px;
                 left: -185px;
             }
         }
@@ -74,7 +74,7 @@
     }
 }
 @media only screen and (max-width: 1049px) and (min-width: 800px) {
-    .landing {
+    #landing-section {
         width: 60%;
         margin: 100px auto;
     }
@@ -104,7 +104,7 @@
                 content: "";
                 user-select: none;
                 pointer-events: none;
-                background: url("./assets/dots.png");
+                background: url("./assets/dotted-circle.png");
                 background-size: 300px 300px;
                 background-repeat: no-repeat;
                 display: block;
@@ -112,7 +112,7 @@
                 height: 300px;
                 width: 300px;
                 z-index: -100;
-                top: -93px;
+                top: -110px;
                 left: -185px;
             }
         }
@@ -156,7 +156,7 @@
 }
 
 @media only screen and (max-width: 799px) and (min-width: 600px) {
-    .landing {
+    #landing-section {
         width: 80%;
         margin: 100px auto -100px auto;
         padding-left: 50px;
@@ -187,7 +187,7 @@
                 content: "";
                 user-select: none;
                 pointer-events: none;
-                background: url("./assets/dots.png");
+                background: url("./assets/dotted-circle.png");
                 background-size: 300px 300px;
                 background-repeat: no-repeat;
                 display: block;
@@ -195,8 +195,8 @@
                 height: 300px;
                 width: 300px;
                 z-index: -100;
-                top: -93px;
-                left: -200px;
+                top: -110px;
+                left: -185px;
             }
         }
         p {
@@ -239,7 +239,7 @@
 }
 
 @media only screen and (max-width: 599px) {
-    .landing {
+    #landing-section {
         width: 75vw;
         margin: 100px auto;
         padding-left: 25px;
@@ -270,7 +270,7 @@
                 content: "";
                 user-select: none;
                 pointer-events: none;
-                background: url("./assets/dots.png");
+                background: url("./assets/dotted-circle.png");
                 background-size: 225px 225px;
                 background-repeat: no-repeat;
                 display: block;
@@ -279,7 +279,7 @@
                 width: 225px;
                 z-index: -100;
                 top: -80px;
-                left: -150px;
+                left: -145px;
             }
         }
         p {
